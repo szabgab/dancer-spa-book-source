@@ -30,6 +30,25 @@ export PATH=$HOME/perl-5261/bin:$PATH
 
 and then reload the file using `source ~/.bashrc`.
 
+Installing the requitred modules using [cpanminus](http://cpanmin.us/).
+Don't get to worried if you visit the website of cpan minus. The only thing you'll find there is the
+compressed version of the installation script.
+The recommended way to download and install cpanminus is to run
+
+```
+$ curl -L https://cpanmin.us | perl - App::cpanminus
+```
+
+but that might not work for you. In any case you could split that command in two:
+
+```
+$ wget  https://cpanmin.us/
+$ perl index.html App::cpanminus
+```
+
+
+
+
 
 ## Linux - Perlbrew and cpanminus
 

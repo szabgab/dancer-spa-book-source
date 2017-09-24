@@ -3,3 +3,5 @@ supporters.md
 preface.md
 
 install-dancer.md
+create-dancer-app.md
+
