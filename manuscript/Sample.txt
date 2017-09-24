@@ -3,3 +3,4 @@ bug_reporting.md
 Changes.md
 supporters.md
 contributors.md
+history.md
