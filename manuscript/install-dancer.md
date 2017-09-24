@@ -125,7 +125,8 @@ Once you have Perl and cpanm installed we can start installing the Perl Modules 
 cpanm Dancer2
 ```
 
-will install the latest edition of Dancer2 and pull in all the modules required by Dancer2.
+it will take a long time and it will install the latest edition of Dancer2 and pull in all the modules required by Dancer2.
+When I ran it, it installed 105 distributions from CPAN.
 
 Using this command is great if you'd like to get the latest and greates of all these modules, however this carries some risks.
 If you run the same commend later you will potentially receive different versions of Dancer2 and the dependencies.
@@ -136,4 +137,10 @@ In most cases these differences won't have an impact on your application, but ha
 some risk with it. There are several ways to ensure you have a specific version of each one of your the modules you require,
 but implementing those are beyond the scope of this book.
 
+
+We'll need a few additional modules. Better install them now:
+
+```
+cpanm Plack::Middleware::Deflater
+```
 

@@ -1,6 +1,9 @@
+preface.md
+bug_reporting.md
 Changes.md
 supporters.md
-preface.md
+contributors.md
+
 
 install-dancer.md
 vagrant.md
