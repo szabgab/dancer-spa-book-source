@@ -80,4 +80,8 @@ Alexandre Mestiashvili,
 Paul Johnson,
 Nikos Vaggalis,
 Stewart Leicester,
+Keren Bartal,
+Jakub Narębski,
+Issac Goldstand,
+Shimon Cohen,
 
