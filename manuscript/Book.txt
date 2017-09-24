@@ -3,5 +3,7 @@ supporters.md
 preface.md
 
 install-dancer.md
+vagrant.md
+
 create-dancer-app.md
 
