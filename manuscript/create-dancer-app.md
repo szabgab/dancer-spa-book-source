@@ -51,6 +51,23 @@ Anyway, now that we saw that the tests that came with the skeleton work, we shou
 plackup bin/app.psgi
 ```
 
+It will print something like this:
+
+```
+HTTP::Server::PSGI: Accepting connections at http://0:5000/
+```
+
+Then you can use your browser to visit the URL printed on the screen. It will redirect to http://0.0.0.0:5000/
+and will show the content of the Dancer default page.
+
+![Dancer default page](images/dancer-default-page.png)
+
+
+
+
+
+## Troubleshooting
+
 If you get an error like this:
 
 ```
