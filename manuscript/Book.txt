@@ -5,9 +5,12 @@ supporters.md
 contributors.md
 history.md
 
+dancer-calculator-app.md
 
 install-dancer.md
 vagrant.md
 
 create-dancer-app.md
 deployment.md
+seo.md
+
