@@ -6,7 +6,7 @@ There are many ways to install a Perl module depending on your operating system 
 ## Linux - compile Perl and use cpanminus
 
 CPAN has [the instructions](https://www.cpan.org/src/README.html) how to download the source of Perl and how to compile and install it,
-but let me repeate them here:
+but let me repeat them here:
 
 ```
 sudo apt-get install -y make gcc
@@ -60,7 +60,7 @@ This is perl 5, version 26, subversion 1 (v5.26.1) built for x86_64-linux
 
 
 
-Installing the requitred modules using [cpanminus](http://cpanmin.us/).
+Installing the required modules using [cpanminus](http://cpanmin.us/).
 Don't get to worried if you visit the website of cpan minus. The only thing you'll find there is the
 compressed version of the installation script.
 The recommended way to download and install cpanminus is to run
@@ -128,9 +128,9 @@ cpanm Dancer2
 it will take a long time and it will install the latest edition of Dancer2 and pull in all the modules required by Dancer2.
 When I ran it, it installed 105 distributions from CPAN.
 
-Using this command is great if you'd like to get the latest and greates of all these modules, however this carries some risks.
+Using this command is great if you'd like to get the latest and greatest of all these modules, however this carries some risks.
 If you run the same commend later you will potentially receive different versions of Dancer2 and the dependencies.
-This command always installes the latest version of any missing module, but it won't upgrade any of the dependencies if
+This command always installs the latest version of any missing module, but it won't upgrade any of the dependencies if
 they already have an installed version that satisfies the requirements.
 
 In most cases these differences won't have an impact on your application, but having different versions carries

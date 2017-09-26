@@ -39,7 +39,7 @@ Result: PASS
 ```
 
 Most of the books and tutorials I've seen run ahead and build an application neglecting the testing. In this book I'd take a different approach.
-Even if we don't get to strick Test Driven Development (TDD) we will write automated tests as we experiment with Dancer and as develop the application.
+Even if we don't get to strict Test Driven Development (TDD) we will write automated tests as we experiment with Dancer and as develop the application.
 It is both a better practice than writing application without test, but I also have to admit I am addicted to tests.
 
 Every time I need to make changes to an application that does not have tests I feel very unsafe. Will my change break anything? Will we notice the breakage
@@ -132,7 +132,7 @@ This is what we got:
 
 The `bin/app.psgi` is a PSGI file that stands for Perl Web Server Gateway Interface. It is a standard between Perl scripts and application servers written in Perl.
 `plackup`, the command we used to launched the server is a small PSGI-based web application server good for development purposes.
-You can read more about [Plack and PSGI](http://plackperl.org/). For our purposes it is enough to know that Dancer adhers to the PSGI specification and thus we can use
+You can read more about [Plack and PSGI](http://plackperl.org/). For our purposes it is enough to know that Dancer adders to the PSGI specification and thus we can use
 and PSGI based web application server to run it. During development we are going to use `plackup`. When we get to [deployment](#deployment) we will discuss out options
 that match the demand of a web application hit by thousands or millions of requests.
 

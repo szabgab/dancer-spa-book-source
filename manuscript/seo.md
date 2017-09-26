@@ -2,7 +2,7 @@
 
 Search Engine Optimization, or in short SEO is the act of getting Search Engines index the content of your site and display it high when people search for terms that are relevant to your subject.
 
-Search Engines utilize bots (also called crawlers) to go over the pages of a web site, read their content and save them in the database of the Search Enginge. Then there are various algorithms inside the Search Engine that index and rank the pages.
+Search Engines utilize bots (also called crawlers) to go over the pages of a web site, read their content and save them in the database of the Search Engine. Then there are various algorithms inside the Search Engine that index and rank the pages.
 
 Single Page Application have only one HTML page. They might utilize the anchoring of HTML pages to provide the illusion of multiple pages and to allow the users to share specific pages by others,
 but all that magic is created by JavaScript and it is lost on the bot of the Search Engines. In general a bot would only see a single page and even that might have no content.
