@@ -1,7 +1,7 @@
 # Changes
 
 
-## 2017-09-
+## 2017-09-26
 
-* First edition
+* First edition. Everything is new.
 
