@@ -1,4 +1,4 @@
-## Bug reporting
+# Bug reporting
 
 If you encounter problems with the book, first please verify you are reading the most recent version of the book.
 Check the fist page of the book you have for "This version was published on DATE" and compare it to the same line of the

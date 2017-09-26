@@ -88,6 +88,8 @@ $ tree
 
 A> By default the `tree` command is not installed. If you'd like to run it first you need to install it using `sudo apt-get install -y tree`
 
+{pagebreak}
+
 This is what we got:
 
 ```

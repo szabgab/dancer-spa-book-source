@@ -1,4 +1,4 @@
-## History of Dancer
+# History of Dancer
 
 The Perl Dancer project was created by Alexis Sukrieh in 2009 as a Perl clone of the Sinatra web framework written in Ruby.
 

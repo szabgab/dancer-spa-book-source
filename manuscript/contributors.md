@@ -1,4 +1,4 @@
-## Contributors
+# Contributors
 
 People who have contributed to the book from the initial idea, through the crowdfunding campaign, till...
 wait, the book is not ready yet. You still have a chance to get listed.
