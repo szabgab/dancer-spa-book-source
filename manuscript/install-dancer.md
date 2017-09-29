@@ -9,8 +9,11 @@ CPAN has [the instructions](https://www.cpan.org/src/README.html) how to downloa
 but let me repeat them here:
 
 ```
-sudo apt-get install -y make gcc
+sudo apt-get install -y build-essential
 ```
+
+This will install gcc, make, and whever else is needed to build other projects.
+
 
 ```
 wget http://www.cpan.org/src/5.0/perl-5.26.1.tar.gz

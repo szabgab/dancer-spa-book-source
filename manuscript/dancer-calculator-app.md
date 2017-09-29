@@ -36,3 +36,8 @@ You can kill this job by typing `kill %1` or by moving it to the foreground usin
 
 Lastly what has just happened to me is that I ran a VirtualBox image using Vagrant, but then I tried to run Dancer on my host
 operating system. VirtualBox has already used port 5000 and thus I got the above error.
+
+## Testing
+
+<<[code/calc.t](code/calc.t)
+

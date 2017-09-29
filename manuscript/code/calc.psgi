@@ -32,4 +32,4 @@ post '/api/calc' => sub {
     return encode_json { result => $x + $y };
 };
   
-start;
+__PACKAGE__->to_app;
