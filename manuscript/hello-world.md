@@ -88,10 +88,14 @@ a code-reference that represents the whole application. When we run `plackup` it
 return value from loading the file and uses that to launch the web server.
 
 
-A> You can check the automatic use strict/use warnings, `get` being a function and __PACKAGE__ being main for yourself by using the [B::Deparse](https://metacpan.org/pod/B::Deparse) module on the hello_world.psgi file:
-A> Run `perl -MO=Deparse hello_world.psgi` and you will get:
-A> <<[code/deparsed_hello_world.psgi](code/deparsed_hello_world.psgi)
-A> You can also check what to_app returns by including a print statement `print __PACKAGE__->to_app;` and then running `perl hello_world.psgi`.
+You can check the automatic use strict/use warnings, `get` being a function and __PACKAGE__ being main for yourself by using the [B::Deparse](https://metacpan.org/pod/B::Deparse) module on the hello_world.psgi file:
+Run 
+```
+perl -MO=Deparse hello_world.psgi
+```
+and you will get:
+<<[code/deparsed_hello_world.psgi](code/deparsed_hello_world.psgi)
+You can also check what to_app returns by including a print statement `print __PACKAGE__->to_app;` and then running `perl hello_world.psgi`.
 
 
 ## Testing Hello World
