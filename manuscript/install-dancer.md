@@ -1,9 +1,9 @@
-# Install Dancer {#install-dancer}
+## Install Dancer {#install-dancer}
 
 Dancer, or more specifically Dancer2 is a Perl module distributed via [CPAN, the Comprehensive Perl Archive Network](https://www.cpan.org/).
 There are many ways to install a Perl module depending on your operating system and your preferences.
 
-## Linux - compile Perl and use cpanminus
+### Linux - compile Perl and use cpanminus
 
 CPAN has [the instructions](https://www.cpan.org/src/README.html) how to download the source of Perl and how to compile and install it,
 but let me repeat them here:
@@ -97,12 +97,12 @@ and observing that it found the command in the expected place. In my case it pri
 /home/ubuntu/perl-5261/bin/cpanm
 ```
 
-## Linux - Perlbrew and cpanminus
+### Linux - Perlbrew and cpanminus
 
 This is probably the most recommended way of installing the latest version of Perl and installing Perl modules.
 
 
-## Linux - from the distribution
+### Linux - from the distribution
 
 Many Linux distributions such as Ubuntu package Dancer2 and allow you to install it using the standard package management system.
 For example on Ubuntu you could install it using the following command:
@@ -120,7 +120,7 @@ For those methods we'll have to use one of the CPAN clients to install the modul
 TBD
 
 
-## Installing Dancer with cpanm
+### Installing Dancer with cpanm
 
 Once you have Perl and cpanm installed we can start installing the Perl Modules we need
 

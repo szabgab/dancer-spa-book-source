@@ -5,7 +5,7 @@ wait, the book is not ready yet. You still have a chance to get listed.
 
 Send me comments, suggestions, and fixes!
 
-A. Sinan Unur,
+A\. Sinan Unur,
 Andrew Solomon,
 Dave Cross,
 Jason A. Crome,

@@ -1,7 +1,9 @@
 # Changes
 
-* Add Hello world examples
-* Update calc.psgi, add calc.t
+* Add some outline of the book.
+* Add setup chapter.
+* Add Hello world examples.
+* Update calc.psgi, add calc.t.
 
 ## 2017-09-26
 

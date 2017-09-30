@@ -5,11 +5,12 @@ supporters.md
 contributors.md
 history.md
 
+setup-environment.md
+vagrant.md
+install-dancer.md
+
 hello-world.md
 dancer-calculator-app.md
-
-install-dancer.md
-vagrant.md
 
 create-dancer-app.md
 deployment.md
