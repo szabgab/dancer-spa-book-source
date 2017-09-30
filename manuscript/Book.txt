@@ -10,6 +10,7 @@ vagrant.md
 install-dancer.md
 
 hello-world.md
+hello-world-spa.md
 dancer-calculator-app.md
 
 create-dancer-app.md
