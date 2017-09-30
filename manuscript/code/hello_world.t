@@ -2,16 +2,13 @@ use strict;
 use warnings;
 use 5.010;
 
+use FindBin ();
+
 use Test::More tests => 3;
 use Plack::Test;
-use HTTP::Request::Common;
+use HTTP::Request::Common qw(GET);
 
-use Cwd qw(abs_path);
-use File::Basename qw(dirname);
-
-my $dir = dirname abs_path $0;
-
-my $app = do "$dir/hello_world.psgi";
+my $app = do "$FindBin::Bin/hello_world.psgi";
 is( ref $app, 'CODE', 'Got app' );
 
 my $test = Plack::Test->create($app);
