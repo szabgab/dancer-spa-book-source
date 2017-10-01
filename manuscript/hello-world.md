@@ -6,18 +6,25 @@ Create the following file:
 
 <<[code/hello_world.psgi](code/hello_world.psgi)
 
-Note I used the extension `psgi`. While it is a Perl program it also adheres to the PSGI standard and while file extensions
-don't have any real meaning, having this extension will help remind everyone than instead of running this with `perl` we need
+Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux.
+You can use any extension with any content, but some tools use the file extension as a hint to recognize
+the type of the content. For example editors usually map file extensions to languages that means appropriate
+syntax coloring.
+
+This is a Perl program, but it also adheres to the PSGI standard.
+Having psgi extension will help remind everyone that instead of running this with `perl` we need
 to run this with the special `plackup` command that was installed when we installed Dancer.
 
 Open the terminal window in the directory where you saved the file and run
 
+{line-numbers=off}
 ```
 plackup hello_world.psgi
 ```
 
 It will print something like this:
 
+{line-numbers=off}
 ```
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
