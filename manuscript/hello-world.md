@@ -24,7 +24,7 @@ plackup hello_world.psgi
 
 It will print something like this:
 
-{line-numbers=off}
+{line-numbers=off, lang=text}
 ```
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
@@ -32,10 +32,11 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 Then you can use your browser to visit the URL printed on the screen. It will redirect to http://0.0.0.0:5000/
 and will `Hello World`.
 
-## Troubleshooting {#troubleshooting-used-port}
+## Troubleshooting used port {#troubleshooting-used-port}
 
-If, when you try to launch the Dancer application using `plackup` you encounter this error:
+When you try to launch the Dancer application using `plackup`, if you encounter this error:
 
+{line-numbers=off, lang=text}
 ```
 failed to listen to port 5000: Address already in use at ...
 ```
@@ -46,6 +47,7 @@ There are couple of ways to fix this:
 
 One might be to use a different port by supplying the `-p` option to `plackup`:
 
+{line-numbers=off, lang=text}
 ```
 plackup -p 5001 ...
 ```
@@ -54,10 +56,11 @@ The other option is to find and stop the application that is already using port 
 
 Go over all the open terminal you have an check if there is another `plackup` process running and kill that one using Ctrl-C.
 
-If you can't find any such application then you have stopped an already running application using Ctrl-Z. That means the application
-is still using the port, but it currently does not provide service. If you type `jobs` in the terminal that this happen
+If you can't find any such application then you might have stopped an already running application using Ctrl-Z. That means the application
+is still using the port, but it currently does not provide service. If you type `jobs` in the terminal that this happened
 you will see something like this:
 
+{line-numbers=off, lang=text}
 ```
 [1]+  Stopped                 plackup -r hello_world.psgi
 ```
