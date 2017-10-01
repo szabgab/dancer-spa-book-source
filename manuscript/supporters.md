@@ -107,5 +107,6 @@ Tim Teasdale,
 Keith Miller,
 Sachi Purcal,
 Brad Currens,
+The Perl Shop, LLC,
 and a few more people who wished to stay Anonymous.
 
