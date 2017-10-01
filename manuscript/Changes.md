@@ -1,5 +1,7 @@
 # Changes
 
+* Add information about support.
+* Add some exercises.
 * Add some outline of the book.
 * Add setup chapter.
 * Add Hello world examples.

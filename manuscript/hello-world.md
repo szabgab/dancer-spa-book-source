@@ -280,3 +280,8 @@ Which means everything is OK.
 
 Later we'll see examples of failing tests just so you can get used to them.
 
+## Exercise Hello World {#exercise-hello-world}
+
+Create a Dancer-based application in a single file that has two routes: '/' returns a pages that says "Hello World" in it and has a link `<a href="/about">About</a>`.
+'/about' returns a text that has displays your name and a link back to the main page `<a href="/">main</a>`.
+

@@ -74,6 +74,8 @@ In this line we already use "data" as a JavaScript object.
 
 This can be done due to another helper feature of jQuery. The "data" passed to the function is the raw string as we received from the server only if we don't get instructions from the server how to treat this data. If the server sets the Content-Type of its response to `application/json` then jQuery assumes the returned string is a JSON string and converts it to real JavaScript object before passing it to the callback function.
 
+The end result is that when you visit the page with a browser that has JavaScript enabled, you will see "Hello Ajax World".
+
 
 When the user loads the main pages of this site, the JavaScript (jQuery) code starts running. It sends a GET request in the background to the `/api/greeting` address that sets the Content-Type
 to `application/json` and sends the json string created from the `{ result => 'Ajax' }` hash reference. The `encode_json` function is provided by Dancer.
@@ -109,7 +111,70 @@ Content-Length: 17
 Content-Type: application/json
 ```
 
+Lastly, if you'd like to see both the content and the header for the same request then you can use the following parameters with `curl`:
+
+{line-numbers=off, lang=text}
+```
+curl http://127.0.0.1:5000/api/greeting -D header.txt
+```
+
+This will print the content of the response to the terminal and the header will be saved (dumped) in the `header.txt` file.
+
 ## Testing
 
+Just as for the plain HTML "Hello World", here too we would like to write a test so we can make sure that even after
+we make changes to the application, features that worked earlier keep working.
+
 <<[code/hello_world_spa.t](code/hello_world_spa.t)
+
+The first few lines are the same as with our previous test, except that we plan for 5 test-cases.
+
+The first difference is when we check the content returned by the main page of the application.
+Previously we used the `is` function provided by Test::More to check for exact matching. That worked well
+in our overly simplicistic case, but won't work in real life situation. Even in our second example,
+testing for an exact match is already problematic. The majority of the content is JavaScript. We might be interested
+in the outcome executing this JavaScript code, but we are certainly not interested in the exact layout of this code.
+In the more generic case when you check if a page contains all the necessary data, you do exactly that. Check if it contains.
+You don't check exact matchin.
+
+So here too we replaced the exact matching with a piece of code that checks if a certain HTML snippet can be found in the response.
+For this we use the `index` function of Perl that will return the location of the second string in the first string or will return
+-1 if the second string cannot be found in the first one. We have a boolean operation as the first parameter of the `ok` function
+and thus the first parameter `ok` will receive will be either True or False.
+ 
+{line-numbers=off}
+```
+ok( index($res->content, 'Hello <span id="result"></span> World') >= 0, 'Content looks ok' );
+```
+
+Then we have 3 additional lines testing the response of the API call to `/api/greeting`.
+
+First we send a `GET` request to the web application and store the response in a varibale we called `$ajax`.
+
+{line-numbers=off}
+```
+my $ajax  = $test->request( GET '/api/greeting' );
+```
+
+Then we check if the response was "200 OK":
+
+{line-numbers=off}
+```
+ok( $ajax->is_success, '[GET /api/greeting] successful' );
+```
+
+Finally we check if the response contains the exact JSON string we expect.
+
+{line-numbers=off}
+```
+is( $ajax->content, '{"result":"Ajax"}', 'Content looks ok' );
+```
+
+In this case we could check that the JSON string matches exactly as it has only one key and one value.
+In the general case a JSON might represent a hash with multiple keys and values. As the keys of hashes
+are not ordered the representation of that hash in JSON is not ordered either. Each GET request can
+return the keys in a different order. If we would like to test the response in those cases we will either have to ensure the
+order of keys in the response we generate on the server or we need to find a way to disregard those differences.
+
+For example by converting the JSON structure into a Perl hash and comparing that to an expected HASH.
 

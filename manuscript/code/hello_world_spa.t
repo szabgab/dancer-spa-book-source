@@ -15,7 +15,7 @@ my $test = Plack::Test->create($app);
 
 my $res  = $test->request( GET '/' );
 ok( $res->is_success, '[GET /] successful' );
-ok( index($res->content, 'Hello <span id="result"></span> World') > 0, 'Content looks ok' );
+ok( index($res->content, 'Hello <span id="result"></span> World') >= 0, 'Content looks ok' );
 
 
 my $ajax  = $test->request( GET '/api/greeting' );

@@ -67,3 +67,27 @@ When to use an SPA and when to avoid it, an SEO perspective.
 * Authentication
 * Session management
 
+## Support
+
+If you need support with Dancer you can get it in a number of channels.
+
+You can use IRC to chat with other Dancer developers. Connect to the #dancer channel on the irc.perl.org IRC server.
+You might use your own IRC client on your computer, or try this web based client: [Mibbit for Dancer](http://widget01.mibbit.com/?autoConnect=true&server=irc.perl.org&channel=%23dancer).
+
+[Perl Monks](http://www.perlmonks.org/) is the place to go to ask generic Perl related questions.
+
+Stack Overflow can be a good place to ask questions. Tag them with both [perl and dancer](https://stackoverflow.com/questions/tagged/dancer).
+
+In order to get help with jQuery you can also use the [Stack Overflow with jquery](https://stackoverflow.com/questions/tagged/jquery) tag.
+
+## Exercises
+
+Reading a book is nice, but if you'd really like to learn how to build something you need to get your hands dirty.
+So as soon as possible you need to start implementing whatever you learned.
+The best might be to start building a project yourself.
+In any case I'll provide a few exercises that will try to make use of the things you might have already encountered in the book.
+If you need help you can always check out the various [support channels](#support).
+
+* [Hello World](#exercise-hello-world)
+* [Calculator](#exercise-calculator)
+
