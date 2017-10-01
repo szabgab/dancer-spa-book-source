@@ -113,7 +113,7 @@ __PACKAGE__->to_app;
 ```
 
 `__PACKAGE__` is the name of the current package, but as we have not declared any packages it will just have `main` in it.
-(We will discuss other packesge later on.)
+(We will discuss other packages later on.)
 We call the `to_app` method on it that was arranged to be a method of Dancer2. It will initiate the application and will return
 a code-reference that represents the whole application. When we run `plackup` it loads this file, receives the code-reference as the
 return value from loading the file and uses that to launch the web server.

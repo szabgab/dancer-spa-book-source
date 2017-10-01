@@ -16,7 +16,7 @@ This is the planned outline of the book.
 
 ### 1
 
-Before we can start writing code we have a slightly tedious task of settin up our environment. That is installing Perl, Dancer2, and a few other things.
+Before we can start writing code we have a slightly tedious task of setting up our environment. That is installing Perl, Dancer2, and a few other things.
 If you are impatient feel free to skip this part and jump ahead. You can always come back and read the setup later.
 
 ### 2
@@ -45,7 +45,7 @@ we can check if the user has provided all the necessary input, if the input is i
 ### X
 
 Server side input validation: While checking the input in the client can improve usability and the responsiveness of the web site, it cannot replace
-server sitde input validation. After all a person who might want to break in your service can circumvent the client side validation and send data directly
+server side input validation. After all a person who might want to break in your service can circumvent the client side validation and send data directly
 to your back-end. You need to protect your service at that point.
 
 ### X

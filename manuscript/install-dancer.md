@@ -12,7 +12,7 @@ but let me repeat them here:
 sudo apt-get install -y build-essential
 ```
 
-This will install gcc, make, and whever else is needed to build other projects.
+This will install gcc, make, and whatever else is needed to build other projects.
 
 
 ```
