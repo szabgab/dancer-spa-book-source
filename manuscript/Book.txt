@@ -17,4 +17,6 @@ create-dancer-app.md
 deployment.md
 seo.md
 
+solutions.md
 appendix.md
+

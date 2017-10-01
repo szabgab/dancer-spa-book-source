@@ -1,7 +1,9 @@
 # Changes
 
+## 2017-10-01
+
 * Add information about support.
-* Add some exercises.
+* Add some exercises and their solutions.
 * Add some outline of the book.
 * Add setup chapter.
 * Add Hello world examples.

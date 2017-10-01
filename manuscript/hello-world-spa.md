@@ -20,6 +20,7 @@ A> For most events you can replace the built-in event with your own callback fun
 A> So when we send the AJAX request we also add a callback function and when the browser has time and checks for new events that have arrived it will see the event
 A> that data has returned in response to your request and will call the callback function you provided earlier. It will also pass the data it received to the function.
 
+## The code
 
 <<[code/hello_world_spa.psgi](code/hello_world_spa.psgi)
 
@@ -120,7 +121,7 @@ curl http://127.0.0.1:5000/api/greeting -D header.txt
 
 This will print the content of the response to the terminal and the header will be saved (dumped) in the `header.txt` file.
 
-## Testing
+## Testing Hello World SPA
 
 Just as for the plain HTML "Hello World", here too we would like to write a test so we can make sure that even after
 we make changes to the application, features that worked earlier keep working.

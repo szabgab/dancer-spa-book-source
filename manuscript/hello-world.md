@@ -2,6 +2,8 @@
 
 In most programming tutorials printing "Hello World" to the screen is the ultimate first example. Let's pay our duties here as well.
 
+## The code
+
 Create the following file:
 
 <<[code/hello_world.psgi](code/hello_world.psgi)
@@ -284,4 +286,8 @@ Later we'll see examples of failing tests just so you can get used to them.
 
 Create a Dancer-based application in a single file that has two routes: '/' returns a pages that says "Hello World" in it and has a link `<a href="/about">About</a>`.
 '/about' returns a text that has displays your name and a link back to the main page `<a href="/">main</a>`.
+
+Extra points if you also write the tests for it.
+
+Check the [solutions](#solutions)
 

@@ -12,3 +12,5 @@ Change the calculator so it will have 3 fields. 2 for numbers and one in the mid
 Change the jQuery code to send all 3 values to the back-end.
 Change the back-end to accept all 3 values and calculate the result based on the provided operator.
 
+Check the [solutions](#solutions)
+
