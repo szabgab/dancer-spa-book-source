@@ -1,5 +1,7 @@
 # Changes
 
+* Separate the Install Perl part from the Install Dancer part.
+
 ## 2017-10-01
 
 * Add information about support.

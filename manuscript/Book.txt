@@ -7,6 +7,7 @@ history.md
 
 setup-environment.md
 vagrant.md
+install-perl.md
 install-dancer.md
 
 hello-world.md
