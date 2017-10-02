@@ -1,7 +1,9 @@
 # Changes
 
+* Echo SPA example.
 * Separate the Install Perl part from the Install Dancer part.
 * List of editors.
+* HTML in the Appendix.
 
 ## 2017-10-01
 
