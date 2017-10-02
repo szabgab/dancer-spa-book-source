@@ -23,3 +23,6 @@ Add exercises. Maybe even create Github repository with exercises.
 
 Accessibility!
 
+Explain GET/POST/etc.
+Quick intro to HTML.
+Explain selectors in jQuery.

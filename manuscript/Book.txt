@@ -13,10 +13,14 @@ ide.md
 
 hello-world.md
 hello-world-spa.md
+echo-spa.md
 dancer-calculator-app.md
 
 create-dancer-app.md
 deployment.md
+
+bootstrap.md
+
 seo.md
 
 solutions.md
