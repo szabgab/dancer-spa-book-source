@@ -2,7 +2,7 @@
 
 This is an early draft of the book. Don't expect anything.
 
-# Preface
+# Preface {#preface}
 
 This book is about the creation of Single Page Applications using Dancer2.
 
@@ -67,12 +67,16 @@ When to use an SPA and when to avoid it, an SEO perspective.
 * Authentication
 * Session management
 
-## Support
+## Support {#support}
 
 If you need support with Dancer you can get it in a number of channels.
 
+There is a mailing list called dancer-users. You can find link to it on the [about](http://perldancer.org/about) page of the Perl Dancer web site.
+This is probably the best place if you have a question about Dancer. I am also lurking on this list so if something is unclear in the content
+of the book then feel free to ask there.
+
 You can use IRC to chat with other Dancer developers. Connect to the #dancer channel on the irc.perl.org IRC server.
-You might use your own IRC client on your computer, or try this web based client: [Mibbit for Dancer](http://widget01.mibbit.com/?autoConnect=true&server=irc.perl.org&channel=%23dancer).
+You might use your own IRC client on your computer, or try this web based client: [Mibbit for Dancer](http://perldancer.org/irc).
 
 [Perl Monks](http://www.perlmonks.org/) is the place to go to ask generic Perl related questions.
 

@@ -1,6 +1,7 @@
 # Changes
 
 * Separate the Install Perl part from the Install Dancer part.
+* List of editors.
 
 ## 2017-10-01
 

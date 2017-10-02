@@ -9,6 +9,7 @@ setup-environment.md
 vagrant.md
 install-perl.md
 install-dancer.md
+ide.md
 
 hello-world.md
 hello-world-spa.md
