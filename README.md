@@ -1,5 +1,11 @@
 # The source of the Dancer SPA book
 
+## Test the examples
+
+```
+prove manuscript/code/
+```
+
 ## Update
 
 Update the common articles from the common repository
@@ -15,4 +21,5 @@ from the server.
 
 Add exercises. Maybe even create Github repository with exercises.
 
+Accessibility!
 
