@@ -4,7 +4,7 @@ HTML used to defined the structure of the page.
 CSS - Cascading Style Sheets - is used to make it look good. CSS is used to set sizes, colors, relative location of some items on an HTML page.
 
 In CSS we can create rules that will impact specific elements on the page. In order to address the elements CSS provides a way to address them.
-It is usually called "CSS Selectors". The same method can be used in other technologis as well. For example most of the JavaScript libraries
+It is usually called "CSS Selectors". The same method can be used in other technologies as well. For example most of the JavaScript libraries
 such as jQuery, will use the same technique to address elements on a page.
 
 ## How to use CSS?
@@ -29,7 +29,7 @@ We can use the `style` HTML tag to embed a whole section of CSS instructions in 
 This is much better as now we can have all the CSS rules in one place, but then we need a way to tell the browser which rule applies to which HTML element.
 We'll look at these CSS selectors in a second. For now just observe that we achieved the same result as earlier with an embedded style-sheet.
 
-This is more generice than the previous option, but if we have multiple pages we'll have to embed the style-sheet in every page.
+This is more generic than the previous option, but if we have multiple pages we'll have to embed the style-sheet in every page.
 
 <<[code/css/b.html](code/css/b.html)
 
@@ -51,7 +51,7 @@ and then use the `link` element to reference that file in our HTML documents:
 When the browser loads the HTML page, it parses the content. When it notices the `link`, the browser will fetch the CSS file
 in a separate request, load it into memory and apply to the page.
 
-This means we only need to repeate the `link` element. It also means that the browser can cache the CSS file and if a user
+This means we only need to repeat the `link` element. It also means that the browser can cache the CSS file and if a user
 visits several pages on your site or if she visits your site more than once then the CSS file is already available and the
 user will see the result faster.
 
@@ -59,7 +59,7 @@ In Single Page Applications this gain is less important as your application has 
 needs to be loaded only once anyway.
 
 There is also a drawback in having a separate CSS file and allowing the browser to cache it. If you update the CSS file you'll
-need to find a way to force all the vistors to load the new version of the CSS file or they will keep seeing the outdated style.
+need to find a way to force all the visitors to load the new version of the CSS file or they will keep seeing the outdated style.
 
 This is also a problem during development when you keep changing the CSS file and you'd like to see the results immediately.
 

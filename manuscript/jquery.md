@@ -17,9 +17,9 @@ It also means that visitors to our site will have to load jQuery which can be 86
 
 ## jQuery for off-line development - best of both worlds
 
-If we use jQuery from a CDN and then we go off-line to develop our code while not connected to the internet we might have a problem.
+If we use jQuery from a CDN and then we go off-line to develop our code while not connected to the Internet we might have a problem.
 If we are lucky and our browser cached the jQuery file then everything will work fine, but if the browser has not cached it, or if the cache has expired,
-(for example because we loaded lots of other things and the disk limite forced the browser to discard the jQuery file we need for our site) then
+(for example because we loaded lots of other things and the disk limit forced the browser to discard the jQuery file we need for our site) then
 we won't be able to develop.
 
 There is a way however that will allow us to enjoy both worlds.
@@ -41,7 +41,7 @@ This code will only work properly if we load it from a server. So loading the ab
 Therefore we have the same example in a simple Dancer application where the only route we have is `/` and it return
 a simple HTML with the above HTML snippet and some more HTML to actually show you that this works.
 
-We have an empty `div` element with ID `text`. We also have some additinal JavaScript code that will run when the whole document has rendered.
+We have an empty `div` element with ID `text`. We also have some additional JavaScript code that will run when the whole document has rendered.
 It will locate the element with the ID `text` and write in it `hi` and the current time created by the `Date()` JavaScript object.
 We use the date so you can reload the page several times and see if it displays the content and if the content was updated since the previous load.
 
@@ -84,7 +84,7 @@ plackup -r bin/alternative.psgi
 
 and then we can visit our web page to see if it works.
 
-In order to really check if this works, you'll need an ellaborate sequence of downloading different versions of jQuery and turning yoru internet connection off and on
+In order to really check if this works, you'll need an elaborate sequence of downloading different versions of jQuery and turning your Internet connection off and on
 while trying the application. I'll let you figure our the order.
 
 ## CSS selectors in jQuery
@@ -92,6 +92,46 @@ while trying the application. I'll let you figure our the order.
 [CSS](#css) has introduced us to a set of selectors that allow us to locate specific HTML tags of groups of HTML tags. jQuery allows us to use the same notation
 to access elements on an HTML page.
 
+We can use the following syntax to make use of CSS selectors that should come in the string:
+
+```
+$('')
+```
+
+Select all the `div` elements:
+
+```
+$('div')
+```
+
+Select the element with ID `name`:
+
+```
+$('#name')
+```
+
+Select the elements with class `ad`:
+
+```
+$('.ad')
+```
+
 
 ## Accessing values in jQuery
+
+Get the value from an input-box.
+
+```
+$('#txt').val();
+```
+
+Set text inside a tag:
+
+```
+<div id="result"></div>
+```
+
+```
+$( "#result" ).html( "new content" );
+```
 
