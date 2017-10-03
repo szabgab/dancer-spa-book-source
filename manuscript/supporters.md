@@ -110,5 +110,9 @@ Sachi Purcal,
 Brad Currens,
 The Perl Shop, LLC,
 Robert Lawson,
+Mark Tagawa,
+Paul M. Lambert,
+Tim Van den Langenbergh,
+Laurent Rosenfeld,
 and a few more people who wished to stay Anonymous.
 
