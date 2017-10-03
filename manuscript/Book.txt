@@ -26,3 +26,5 @@ seo.md
 solutions.md
 appendix.md
 html.md
+css.md
+jquery.md
