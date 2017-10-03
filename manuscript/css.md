@@ -93,4 +93,16 @@ We can use the name of the HTML tag to select all the elements with that tag. In
 
 ### Select by id
 
+We have already seen this. We need to add an `id` to the HTML elements and then we can address them specifically
+by a CSS selector that starts with a `#`.
+
+<<[code/css/b.html](code/css/b.html)
+
+The IDs need to be unique on a single HTML page or the CSS selector will get confused.
+The IDs should also be a lot more meaningful than what we have in this example.
+
+### Select by class
+
+<<[code/css/s3.html](code/css/s3.html)
+
 
