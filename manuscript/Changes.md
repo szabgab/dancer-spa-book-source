@@ -1,5 +1,7 @@
 # Changes
 
+## v0.25 2017-10-03
+
 * Echo SPA example.
 * Separate the Install Perl part from the Install Dancer part.
 * List of editors.
@@ -7,7 +9,7 @@
 * CSS in the Appendix.
 * jQuery in the Appendix.
 
-## 2017-10-01
+## v0.15 2017-10-01
 
 * Add information about support.
 * Add some exercises and their solutions.
@@ -16,7 +18,7 @@
 * Add Hello world examples.
 * Update calc.psgi, add calc.t.
 
-## 2017-09-26
+## v0.05 2017-09-26
 
 * First edition. Everything is new.
 
