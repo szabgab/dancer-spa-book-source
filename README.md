@@ -24,5 +24,10 @@ Add exercises. Maybe even create Github repository with exercises.
 Accessibility!
 
 Explain GET/POST/etc.
-Quick intro to HTML.
 Explain selectors in jQuery.
+
+## Off-line use of jQuery
+
+TBD.
+How to use jQuery so once the user has visited the site once she will be able to use our application even when she is off-line?
+
