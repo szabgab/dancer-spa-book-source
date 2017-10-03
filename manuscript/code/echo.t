@@ -4,7 +4,7 @@ use 5.010;
 
 use Test::More tests => 5;
 use Plack::Test;
-use HTTP::Request::Common;
+use HTTP::Request::Common qw(GET POST);
 
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);

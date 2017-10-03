@@ -4,6 +4,8 @@
 * Separate the Install Perl part from the Install Dancer part.
 * List of editors.
 * HTML in the Appendix.
+* CSS in the Appendix.
+* jQuery in the Appendix.
 
 ## 2017-10-01
 

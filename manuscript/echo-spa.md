@@ -97,10 +97,69 @@ It will assume we received a JSON string and will convert it to a JavaScript obj
 Hence in the function we can already use the `data` variable as a JavaScript object and access the 
 "result" field.
 
-TBD...
+In the last line in the JavaScript code, in
+
+```
+$( "#result" ).html( data["result"] );
+```
+
+we locate the empty `div` using the `$( "#result" )` CSS selector and then we set the content of the tag
+to be the result we received from the server.
+
+If you look closer at the second route, you can see that it is declared using the `post` keyword supplied by Dancer.
+Just as earlier we use the `header` keyword of Dancer to set the header returned to the client. This will take effect in the
+specific route where it is executed.
+
+Then comes the new code. The `body_parameters` keyword provided by Dancer returns a hash containing all the key-value pairs
+that were sent in a POST request. We expect the client to send in a key-value pair where `txt` is the key. Here we extract the
+value sent by the client. This is the text the user typed in the input-box.
+
+```
+post '/api/echo' => sub {
+    header( 'Content-Type'  => 'application/json' );
+    my $txt = body_parameters->{'txt'};
+    return encode_json { result => scalar reverse $txt };
+};
+```
+
+Finally we call the `reverse` function of Perl to reverse the order of characters in the string. `reverse` is a funny function.
+It behaves differently in LIST and SCALAR context. Because the fat arrow `=>` in the last line creates a LIST context and we need
+the function to be in SCALAR context we need to call the `scalar` function that will force `reverse` into SCALAR context.
+
+An alternative to the `scalar` function and to the above explanation, would be to use a temporary scalar variable:
+
+```
+    my $txt = body_parameters->{'txt'};
+    my $response = reverse $txt;
+    return encode_json { result => $response };
+```
 
 
 ## Testing Echo
+
+The code testing the echo application is not that different from the previous tests, but we do have a section
+where we send a `POST` request and supply some data.
+
+For this we had to import the `POST` keyword from HTTP::Request::Common.
+The request itself has the data in a hash just after the URL where the request will be sent.
+
+```
+my $echo  = $test->request( POST '/api/echo' , { txt => 'abc' });
+```
+
+We first checked if the response was successful, if it returned `200 OK`, and then we compare the response to
+a fixed string that is the JSON representation of our hash:
+
+```
+is $echo->content, '{"result":"cba"}', 'echo abc=cba';
+```
+
+We can do that because we only have a single key-value pair. If we had more keys we would not be able to anticipate
+the order they were converted to JSON so we would take the JSON we received. We would convert it back to a Perl hash,
+and then we would use the `is_deeply` function from Test::More;
+
+
+The full test code can be seen here:
 
 <<[code/echo.t](code/echo.t)
 
