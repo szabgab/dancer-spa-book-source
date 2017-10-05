@@ -135,3 +135,8 @@ Set text inside a tag:
 $( "#result" ).html( "new content" );
 ```
 
+## Pages
+
+<<[code/jquery/pages.html](code/jquery/pages.html)
+
+
