@@ -1,5 +1,9 @@
 # Changes
 
+## v0.25.1 2017-10-06
+
+* Update list of supporters.
+
 ## v0.25 2017-10-03
 
 * Echo SPA example.
