@@ -1,0 +1,26 @@
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+$().ready(function() {
+    $("#show").click(function() {
+        $("#show-text").html( $("#text").val() );
+        $("#show-password").html( $("#password").val() );
+
+        var color = $('input[name=color]:checked').val();
+        $("#show-color").html( color );
+    });
+});
+</script>
+
+text: <input type="text" id="text"><br>
+password: <input type="password" id="password"><br>
+
+<input type="radio" name="color" value="blue">blue
+<input type="radio" name="color" value="red">red
+<input type="radio" name="color" value="green">green
+<p>
+<button id="show">Show</button>
+
+<div id="show-text"></div>
+<div id="show-password"></div>
+<div id="show-color"></div>
+

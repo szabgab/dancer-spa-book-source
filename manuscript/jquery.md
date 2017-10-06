@@ -135,8 +135,14 @@ Set text inside a tag:
 $( "#result" ).html( "new content" );
 ```
 
+<<[code/jquery/form_values.html](code/jquery/form_values.html)
+
 ## Pages
 
 <<[code/jquery/pages.html](code/jquery/pages.html)
+
+Use the anchor to mainatin history, allow external links and allow make back button work.
+
+<<[code/jquery/pages_history.html](code/jquery/pages_history.html)
 
 
