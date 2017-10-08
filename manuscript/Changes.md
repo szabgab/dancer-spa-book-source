@@ -3,6 +3,7 @@
 * Add Multi-file applications.
 * Add chapter with error handling.
 * Add some text about deployment.
+* Add more jQuery examples.
 
 ## v0.25.1 2017-10-06
 
