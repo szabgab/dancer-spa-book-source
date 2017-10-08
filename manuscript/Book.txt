@@ -22,6 +22,8 @@ multi-file-apps.md
 create-dancer-app.md
 deployment.md
 
+server-side-error-handling.md
+
 bootstrap.md
 
 seo.md
