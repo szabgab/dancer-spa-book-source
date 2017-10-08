@@ -24,10 +24,12 @@ If you are impatient feel free to skip this part and jump ahead. You can always 
 We will have our "Hello World" application in Dancer. We'll talk a bit about development environment.
 The first application will be HTML only, not really a SPA.
 We might also take a look at the same "Hello World" as a SPA.
+This includes a simple AJAX requests to get some data from the server to the application
 
 ### 3
 
 We will see another SPA which is a bit more complex - a calculator that already accepts input from the user and provides some response.
+This includes a simple AJAX requests to send some data to the server, accept and process the response.
 
 ### 4
 
@@ -50,16 +52,21 @@ to your back-end. You need to protect your service at that point.
 
 ### X
 
+Server side error handling. What happens if there is an exception in the code?
+What happens if the user tries to access a route without proper authentication?
+What happens if the user does not supply the expected input, or supplies incorrect input? (e.g. a sting instead of a number).
+What happens if the user tries to access a route that does not exist?
+
+### X
+
 When to use an SPA and when to avoid it, an SEO perspective.
 
 * A simple route returning the HTML page that will house the rest of the application
 * Introduction to Bootstrap, the HTML/CSS framework
 * Creating content-heavy web pages for SEO
 * Selecting the JavaScript framework: the case for jQuery
-* Simple AJAX requests to get some data from the server to the application
 * Submitting data to the server and getting a response
 * Client side error handling
-* Server side error handling
 * Designing and implementing an API
 * Testing the back end API
 * Pages: client side routing
