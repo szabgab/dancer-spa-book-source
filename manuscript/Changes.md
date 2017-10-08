@@ -1,5 +1,7 @@
 # Changes
 
+* Add Multi-file applications.
+
 ## v0.25.1 2017-10-06
 
 * Update list of supporters.
