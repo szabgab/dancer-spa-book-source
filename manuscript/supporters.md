@@ -140,6 +140,7 @@ Joseph Bakker,
 Larry Sherwood,
 Manfred Laner,
 Judith Hollenberger,
+Ian Gates,
 and a few more people who wished to stay Anonymous.
 
 If you have supported the campaign, but your name does not appear here it might be that you marked your support as "Private" or that I made a mistake. In either case contact me by e-mail so I can correct the issue.
