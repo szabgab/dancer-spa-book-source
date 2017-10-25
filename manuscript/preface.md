@@ -1,9 +1,7 @@
 {sample: true}
-# Warning
+# Preface {#preface}
 
 This is an early draft of the book. Don't expect anything.
-
-# Preface {#preface}
 
 This book is about the creation of Single Page Applications using Dancer2.
 
