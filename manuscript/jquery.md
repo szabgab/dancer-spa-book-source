@@ -145,4 +145,4 @@ Use the anchor to mainatin history, allow external links and allow make back but
 
 ![code/jquery/pages_history.html](code/jquery/pages_history.html)
 
-
+End.
