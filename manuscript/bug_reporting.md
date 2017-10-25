@@ -1,3 +1,4 @@
+{sample: true}
 # Bug reporting
 
 If you encounter problems with the book, first please verify you are reading the most recent version of the book.

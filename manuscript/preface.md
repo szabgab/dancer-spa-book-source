@@ -1,3 +1,4 @@
+{sample: true}
 # Warning
 
 This is an early draft of the book. Don't expect anything.

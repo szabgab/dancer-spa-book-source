@@ -1,4 +1,5 @@
-# Supporters
+{sample: true}
+# Supporters {#supporters}
 
 These are the people who supported the crowdfunding campaign of the book. Without them, the book would not be possible.
 Thank you for your trust and support!
