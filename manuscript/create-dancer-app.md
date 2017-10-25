@@ -144,6 +144,6 @@ The lib/App/Demo.pm file is the Perl module that implements the routes.
 
 The one we have looks like this:
 
-<<[code/1/lib/App/Demo.pm](code/1/lib/App/Demo.pm)
+![code/1/lib/App/Demo.pm](code/1/lib/App/Demo.pm)
 
 

@@ -13,7 +13,7 @@ such as jQuery, will use the same technique to address elements on a page.
 
 We attach CSS rules to the specific elements in an HTML document using the `style` attribute.
 
-<<[code/css/a.html](code/css/a.html)
+![code/css/a.html](code/css/a.html)
 
 Here we set the style of a specific HTML element. `font-size` is one of the many CSS attributes. We set it to be 30px (30 pixel).
 
@@ -31,7 +31,7 @@ We'll look at these CSS selectors in a second. For now just observe that we achi
 
 This is more generic than the previous option, but if we have multiple pages we'll have to embed the style-sheet in every page.
 
-<<[code/css/b.html](code/css/b.html)
+![code/css/b.html](code/css/b.html)
 
 In this code `#x` is a selector that will select the element with ID `x`. The selector is followed by curly braces
 that contain the CSS attributes.
@@ -41,12 +41,12 @@ that contain the CSS attributes.
 
 Last, and the most generic way is to put the CSS rules in a separate file:
 
-<<[code/css/c.css](code/css/c.css)
+![code/css/c.css](code/css/c.css)
 
 
 and then use the `link` element to reference that file in our HTML documents:
 
-<<[code/css/c.html](code/css/c.html)
+![code/css/c.html](code/css/c.html)
 
 When the browser loads the HTML page, it parses the content. When it notices the `link`, the browser will fetch the CSS file
 in a separate request, load it into memory and apply to the page.
@@ -87,7 +87,7 @@ The CSS Selectors are used to address specific elements on the page.
 
 We can use the name of the HTML tag to select all the elements with that tag. In this example 
 
-<<[code/css/s1.html](code/css/s1.html)
+![code/css/s1.html](code/css/s1.html)
 
 ![Select by tag](images/css_s1.png)
 
@@ -96,13 +96,13 @@ We can use the name of the HTML tag to select all the elements with that tag. In
 We have already seen this. We need to add an `id` to the HTML elements and then we can address them specifically
 by a CSS selector that starts with a `#`.
 
-<<[code/css/b.html](code/css/b.html)
+![code/css/b.html](code/css/b.html)
 
 The IDs need to be unique on a single HTML page or the CSS selector will get confused.
 The IDs should also be a lot more meaningful than what we have in this example.
 
 ### Select by class
 
-<<[code/css/s3.html](code/css/s3.html)
+![code/css/s3.html](code/css/s3.html)
 
 

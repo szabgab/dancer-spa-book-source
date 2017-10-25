@@ -27,7 +27,7 @@ There is a way however that will allow us to enjoy both worlds.
 We can use the following HTML code with some embedded JavaScript code to first try to load jQuery
 from the public CDN. If that fails then load it from our own server. (I've seen this in the skeleton created by the `dancer2` command.)
 
-<<[code/jquery/alternative.html](code/jquery/alternative.html)
+![code/jquery/alternative.html](code/jquery/alternative.html)
 
 Here the first `script` tag refers to the jQuery file on the CDN.
 The second `script` tag has a small JavaScript snippet in it that check if the object `window.jQuery` exists.
@@ -53,7 +53,7 @@ $().ready(function() {
 
 Here is the full version:
 
-<<[code/jquery/bin/alternate.psgi](code/jquery/bin/alternate.psgi)
+![code/jquery/bin/alternate.psgi](code/jquery/bin/alternate.psgi)
 
 In order for this to work we need to create a directory structure. Put our psgi file in the `bin` subdirectory
 and put the downloaded jQuery file in the `public` directory. Like this:
@@ -135,14 +135,14 @@ Set text inside a tag:
 $( "#result" ).html( "new content" );
 ```
 
-<<[code/jquery/form_values.html](code/jquery/form_values.html)
+![code/jquery/form_values.html](code/jquery/form_values.html)
 
 ## Pages
 
-<<[code/jquery/pages.html](code/jquery/pages.html)
+![code/jquery/pages.html](code/jquery/pages.html)
 
 Use the anchor to mainatin history, allow external links and allow make back button work.
 
-<<[code/jquery/pages_history.html](code/jquery/pages_history.html)
+![code/jquery/pages_history.html](code/jquery/pages_history.html)
 
 

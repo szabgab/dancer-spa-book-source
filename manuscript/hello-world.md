@@ -6,7 +6,7 @@ In most programming tutorials printing "Hello World" to the screen is the ultima
 
 Create the following file:
 
-<<[code/hello_world.psgi](code/hello_world.psgi)
+![code/hello_world.psgi](code/hello_world.psgi)
 
 Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux.
 You can use any extension with any content, but some tools use the file extension as a hint to recognize
@@ -129,7 +129,7 @@ perl -MO=Deparse hello_world.psgi
 
 and you will get:
 
-<<[code/deparsed_hello_world.psgi](code/deparsed_hello_world.psgi)
+![code/deparsed_hello_world.psgi](code/deparsed_hello_world.psgi)
 
 You can also check what to_app returns by including a print statement in the last line:
 
@@ -165,7 +165,7 @@ We don't want to do that. That's why we will start writing automated tests from 
 
 Here is the code that will test our Hello World application.
 
-<<[code/hello_world.t](code/hello_world.t)
+![code/hello_world.t](code/hello_world.t)
 
 So what's in this test code?
 

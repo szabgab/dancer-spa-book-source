@@ -4,13 +4,13 @@ The Calculator examples is really just a simple extension of the echo example. H
 The two boxes are expected to receive two numbers.
 When the user presses the button the application sends the values from the two input boxes to the server that returns the sum of the two numbers.
 
-<<[code/calc.psgi](code/calc.psgi)
+![code/calc.psgi](code/calc.psgi)
 
 ## Testing
 
 The testing is also quite similar, but this time we send two values in the hash of the POST request.
 
-<<[code/calc.t](code/calc.t)
+![code/calc.t](code/calc.t)
 
 ## Exercise calculator {#exercise-calculator}
 

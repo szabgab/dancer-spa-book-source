@@ -4,7 +4,7 @@
 
 Probably no need to show this.
 
-<<[code/hello_world.pl](code/hello_world.pl)
+![code/hello_world.pl](code/hello_world.pl)
 
 ```
 $ perl hello_world.pl

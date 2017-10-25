@@ -8,7 +8,7 @@ it sends the text we typed in to the server which promptly returns it.
 
 To make it a bit more fun, instead of sending back the string as we received we are going to return it backwards.
 
-<<[code/echo.psgi](code/echo.psgi)
+![code/echo.psgi](code/echo.psgi)
 
 Just as in the previous examples, here too we have two routes. One serving the root URL at `/` and one serving the API call at
 `/api/echo` but this time the API route is declared with the `post` keyword. We'll get there in a minute.
@@ -161,5 +161,5 @@ and then we would use the `is_deeply` function from Test::More;
 
 The full test code can be seen here:
 
-<<[code/echo.t](code/echo.t)
+![code/echo.t](code/echo.t)
 

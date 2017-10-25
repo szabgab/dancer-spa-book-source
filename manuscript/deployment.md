@@ -47,9 +47,9 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-<<[code/nginx-demo.conf](code/nginx-demo.conf)
+![code/nginx-demo.conf](code/nginx-demo.conf)
 
-<<[code/starman_daemon.pl](code/starman_daemon.pl)
+![code/starman_daemon.pl](code/starman_daemon.pl)
 
 The official deployment guide is in [Dancer2::Manual::Deployment](https://metacpan.org/pod/Dancer2::Manual::Deployment).
 
