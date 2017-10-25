@@ -50,7 +50,7 @@ Change the line `vb.memory` to `vb.memory = "2048"`.
 This is the Vagrant file I have:
 
 {format: ruby}
-![code/Vagrantfile](code/Vagrantfile.txt)
+code/Vagrantfile code/Vagrantfile.txt
 
 
 * Then you can type in `vagrant up`.
