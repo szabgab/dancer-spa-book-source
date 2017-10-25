@@ -3,9 +3,7 @@
 HTML used to defined the structure of the page. 
 CSS - Cascading Style Sheets - is used to make it look good. CSS is used to set sizes, colors, relative location of some items on an HTML page.
 
-In CSS we can create rules that will impact specific elements on the page. In order to address the elements CSS provides a way to address them.
-It is usually called "CSS Selectors". The same method can be used in other technologies as well. For example most of the JavaScript libraries
-such as jQuery, will use the same technique to address elements on a page.
+In CSS we can create rules that will impact specific elements on the page. In order to address the elements CSS provides a way to address them. It is usually called "CSS Selectors". The same method can be used in other technologies as well. For example most of the JavaScript libraries such as jQuery, will use the same technique to address elements on a page.
 
 ## How to use CSS?
 
@@ -25,16 +23,13 @@ However this is not very scalable. You'd have to add style to every element.
 
 ### CSS Embedded in HTML
 
-We can use the `style` HTML tag to embed a whole section of CSS instructions in the HTML document.
-This is much better as now we can have all the CSS rules in one place, but then we need a way to tell the browser which rule applies to which HTML element.
-We'll look at these CSS selectors in a second. For now just observe that we achieved the same result as earlier with an embedded style-sheet.
+We can use the `style` HTML tag to embed a whole section of CSS instructions in the HTML document. This is much better as now we can have all the CSS rules in one place, but then we need a way to tell the browser which rule applies to which HTML element. We'll look at these CSS selectors in a second. For now just observe that we achieved the same result as earlier with an embedded style-sheet.
 
 This is more generic than the previous option, but if we have multiple pages we'll have to embed the style-sheet in every page.
 
 ![code/css/b.html](code/css/b.html)
 
-In this code `#x` is a selector that will select the element with ID `x`. The selector is followed by curly braces
-that contain the CSS attributes.
+In this code `#x` is a selector that will select the element with ID `x`. The selector is followed by curly braces that contain the CSS attributes.
 
 
 ### Reference external CSS file
@@ -48,26 +43,19 @@ and then use the `link` element to reference that file in our HTML documents:
 
 ![code/css/c.html](code/css/c.html)
 
-When the browser loads the HTML page, it parses the content. When it notices the `link`, the browser will fetch the CSS file
-in a separate request, load it into memory and apply to the page.
+When the browser loads the HTML page, it parses the content. When it notices the `link`, the browser will fetch the CSS file in a separate request, load it into memory and apply to the page.
 
-This means we only need to repeat the `link` element. It also means that the browser can cache the CSS file and if a user
-visits several pages on your site or if she visits your site more than once then the CSS file is already available and the
-user will see the result faster.
+This means we only need to repeat the `link` element. It also means that the browser can cache the CSS file and if a user visits several pages on your site or if she visits your site more than once then the CSS file is already available and the user will see the result faster.
 
-In Single Page Applications this gain is less important as your application has only a single HTML file and thus the CSS
-needs to be loaded only once anyway.
+In Single Page Applications this gain is less important as your application has only a single HTML file and thus the CSS needs to be loaded only once anyway.
 
-There is also a drawback in having a separate CSS file and allowing the browser to cache it. If you update the CSS file you'll
-need to find a way to force all the visitors to load the new version of the CSS file or they will keep seeing the outdated style.
+There is also a drawback in having a separate CSS file and allowing the browser to cache it. If you update the CSS file you'll need to find a way to force all the visitors to load the new version of the CSS file or they will keep seeing the outdated style.
 
 This is also a problem during development when you keep changing the CSS file and you'd like to see the results immediately.
 
 #### Forcing CSS file reload
 
-There are several techniques to force the reloading of the CSS content. One is to change the name of the CSS file every time
-we create a new version and then to update all the HTML pages to refer to the new file. This is much easier than it sounds
-as most of the HTML pages are generated from a common template anyway.
+There are several techniques to force the reloading of the CSS content. One is to change the name of the CSS file every time we create a new version and then to update all the HTML pages to refer to the new file. This is much easier than it sounds as most of the HTML pages are generated from a common template anyway.
 
 Another technique is to add a parameter to the end of the filename in the `link` tag:
 
@@ -93,8 +81,7 @@ We can use the name of the HTML tag to select all the elements with that tag. In
 
 ### Select by id
 
-We have already seen this. We need to add an `id` to the HTML elements and then we can address them specifically
-by a CSS selector that starts with a `#`.
+We have already seen this. We need to add an `id` to the HTML elements and then we can address them specifically by a CSS selector that starts with a `#`.
 
 ![code/css/b.html](code/css/b.html)
 

@@ -6,9 +6,7 @@
 $ dancer2 gen -a Demo::App
 ```
 
-This will create a directory called `Demo-App` right where you are, a bunch of subdirectories and files in it.
-This is the skeleton of an application. It will print the names of the directories and files as it creates them
-and at the end it prints out the instructions to follow:
+This will create a directory called `Demo-App` right where you are, a bunch of subdirectories and files in it  This is the skeleton of an application. It will print the names of the directories and files as it creates them and at the end it prints out the instructions to follow:
 
 ```
 The application is ready to serve; to run it, do:
@@ -38,12 +36,9 @@ Files=2, Tests=3,  1 wallclock secs ( 0.04 usr  0.01 sys +  1.30 cusr  0.13 csys
 Result: PASS
 ```
 
-Most of the books and tutorials I've seen run ahead and build an application neglecting the testing. In this book I'd take a different approach.
-Even if we don't get to strict Test Driven Development (TDD) we will write automated tests as we experiment with Dancer and as develop the application.
-It is both a better practice than writing application without test, but I also have to admit I am addicted to tests.
+Most of the books and tutorials I've seen run ahead and build an application neglecting the testing. In this book I'd take a different approach. Even if we don't get to strict Test Driven Development (TDD) we will write automated tests as we experiment with Dancer and as develop the application. It is both a better practice than writing application without test, but I also have to admit I am addicted to tests.
 
-Every time I need to make changes to an application that does not have tests I feel very unsafe. Will my change break anything? Will we notice the breakage
-soon or only after we have deployed the application or only after a customer lost a million dollars?
+Every time I need to make changes to an application that does not have tests I feel very unsafe. Will my change break anything? Will we notice the breakage soon or only after we have deployed the application or only after a customer lost a million dollars?
 
 Anyway, now that we saw that the tests that came with the skeleton work, we should check if the skeleton really works. So type in
 
@@ -57,8 +52,7 @@ It will print something like this:
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
 
-Then you can use your browser to visit the URL printed on the screen. It will redirect to http://0.0.0.0:5000/
-and will show the content of the Dancer default page.
+Then you can use your browser to visit the URL printed on the screen. It will redirect to `http://0.0.0.0:5000/` and will show the content of the Dancer default page.
 
 ![Dancer default page](images/dancer-default-page.png)
 
@@ -134,9 +128,7 @@ This is what we got:
 
 The `bin/app.psgi` is a PSGI file that stands for Perl Web Server Gateway Interface. It is a standard between Perl scripts and application servers written in Perl.
 `plackup`, the command we used to launched the server is a small PSGI-based web application server good for development purposes.
-You can read more about [Plack and PSGI](http://plackperl.org/). For our purposes it is enough to know that Dancer adders to the PSGI specification and thus we can use
-and PSGI based web application server to run it. During development we are going to use `plackup`. When we get to [deployment](#deployment) we will discuss out options
-that match the demand of a web application hit by thousands or millions of requests.
+You can read more about [Plack and PSGI](http://plackperl.org/). For our purposes it is enough to know that Dancer adders to the PSGI specification and thus we can use and PSGI based web application server to run it. During development we are going to use `plackup`. When we get to [deployment](#deployment) we will discuss out options that match the demand of a web application hit by thousands or millions of requests.
 
 The content of the `bin/app.psgi` file is not very interesting for us now.
 
