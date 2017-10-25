@@ -4,6 +4,7 @@
 * Add chapter with error handling.
 * Add some text about deployment.
 * Add more jQuery examples.
+* Switch the source to use Markua.
 
 ## v0.25.1 2017-10-06
 
