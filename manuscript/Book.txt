@@ -1,4 +1,5 @@
 preface.md
+outline.md
 bug_reporting.md
 Changes.md
 supporters.md
