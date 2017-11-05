@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Showing errors</title>
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/errors.js"></script>
+</head>
+<body>
+  <h1>Showing errors</h1>
+  <a href="/hello">Leads to page that does not exist</a>
+  <p>
+
+  <form method="POST" action="/calc">
+     <div>HTML divide: <input name="a"> / <input name="b"> <input type="submit" value="="></div>
+  </form>
+
+  <div>AJAX divide: <input id="x"> / <input id="y"> <input type="submit" id="calc" value="="> <span id="result"></span></div>
+</body>
+</html>
+

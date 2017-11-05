@@ -7,7 +7,7 @@ use Plack::Test;
 use HTTP::Request::Common qw(GET POST);
 use FindBin;
 
-my $app = do "$FindBin::Bin/errors.psgi";
+my $app = do "$FindBin::Bin/../bin/errors.psgi";
 is( ref $app, 'CODE', 'Got app' );
 
 my $test = Plack::Test->create($app);
