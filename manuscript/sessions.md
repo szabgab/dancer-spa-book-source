@@ -34,3 +34,7 @@ The standard authentication is to provide a username and a password. The server 
 
 ![code/sessions/t/session.t](code/sessions/t/session.t)
 
+![code/sessions/public/session.js](code/sessions/public/session.js)
+
+![code/sessions/views/index.tt](code/sessions/views/index.tt)
+
