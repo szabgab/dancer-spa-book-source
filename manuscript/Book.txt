@@ -34,3 +34,5 @@ appendix.md
 html.md
 css.md
 jquery.md
+sessions.md
+https.md
