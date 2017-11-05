@@ -26,13 +26,15 @@ https.md
 
 server-side-error-handling.md
 
+sessions.md
+
+html.md
+css.md
 bootstrap.md
+
+jquery.md
 
 seo.md
 
 solutions.md
 appendix.md
-html.md
-css.md
-jquery.md
-sessions.md
