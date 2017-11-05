@@ -1,21 +1,16 @@
-# HTML
+# HTML {#html}
 
-This is a quick introduction to HTML.
+This is a quick introduction to HTML, the [Hypertext Markup Language](https://en.wikipedia.org/wiki/Html).
 
 TBD - a lot more is needed.
 
-An HTML page is plain text page with tags in it that look like this `<name>`. A web browser can interpret those tags and display the text among those tags
-and load additional files based on the instructions of those tags.
-Some tags have a closing pair such as `<b>` and its closing pair `</b>`, other tags usually stand alone. For example `<img>`.
-Each tag can have attributes. For example the `<img>` tag has a `src` attribute: `<img src="/images/name.png">` means fetch the image
-at the URL given in the `src` attribute and display it inside the HTML page.  For some tags some of the attributes are rather critical.
+An HTML page is plain text page with tags in it that look like this `<name>`. A web browser such as FireFox, Chrome, Opera, or Internet Explorer can interpret those tags and display them and the text among those tags and load additional files based on the instructions of those tags. Some tags come in pairs such as `<b>` and its closing pair `</b>`, other tags usually stand alone. For example `<img>`. Each tag starts with a less-then character followed by the name of the tag followed by the greater-than character. Tags can have attributes that have values. For example the `<img>` tag has a `src` attribute: `<img src="/images/name.png">` means fetch the image at the URL given in the `src` attribute and display it inside the HTML page. Most of the attributes are optional, but for some tags some of the attributes are rather critical. For example and `img` tag does not have a lot of value without the `src` attribute.
 
-What might be the most important for our purposed is that each element can have an attribute called `id`. Each ID should be unique inside an HTML
-page though there is no enforcement of this uniqueness. If you happen to have two elements with the same ID some of the JavaScript code we'll write
-may get confused though. So try to avoid that.
+What might be the most important for our purposed is that each element can have an attribute called `id`. Each ID should be unique inside an HTML page though there is no enforcement of this uniqueness. If you happen to have two elements with the same ID some of the JavaScript code we'll write may get confused though. So try to avoid that.
 
 Sample:
 
+{line-numbers=off, lang=html}
 ```
 <div id="name"></div>
 ```

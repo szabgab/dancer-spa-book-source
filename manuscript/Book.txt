@@ -22,6 +22,7 @@ multi-file-apps.md
 
 create-dancer-app.md
 deployment.md
+https.md
 
 server-side-error-handling.md
 
@@ -35,4 +36,3 @@ html.md
 css.md
 jquery.md
 sessions.md
-https.md

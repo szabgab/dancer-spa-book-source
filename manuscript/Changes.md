@@ -1,5 +1,7 @@
 # Changes
 
+* Add HTTPS.
+* Add Cookies and Sesssion.
 * Add Multi-file applications.
 * Add chapter with error handling.
 * Add some text about deployment.

@@ -1,4 +1,4 @@
-# HTTPS - Secure communication {#https}
+## HTTPS - Secure communication {#https}
 
 By default people use HTTP when setting up a web server and thus all the clients are communicating with web server via HTTP. In clear text. That means if someone manages to listen-in to the communication between you and the server, they can see the information you send to the server and the responses you receive. Though for random Joe or Jane it is not trivial to gain access to your communications, it is also not extremely difficult. In addition your ISP and all the routers between you and the server have full access to the traffic. It can provide great way to steal data from you. Impersonate you and in general ruin your day.
 
