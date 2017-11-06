@@ -14,7 +14,7 @@ For every request the server will provide some response that will include an [HT
 
 If we are developing an API then returning an HTML page with some content and tons of markup is probably not a good idea. It would be probably better to return some JSON structure that contains information on the error and some pointers on how to fix them, if this is something the user can fix.
 
-## Common HTTP status codes
+## Common HTTP status codes {#http-status-code}
 
 There are a lot of [HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) divided into several categories.
 
@@ -36,6 +36,13 @@ The `rewrite` of nginx set `301 Moved Permanently`.
 `404 Not Found` is one of the most common error messages on the Internet. It happens if we try to access a page that does not exist. Either because we clieck on a wrong link, we have typed in the wrong URL, or because the page was removed and no redirect was put in place.
 
 `500 Internal Server Error` is another very common error message. We will get it if there is an exception in the code. Either one that we ourself generated, for example a call to `opern or die`, something a module we use generated, or because we have made some coding error, or because we have not veryfied the input and the user supplied some data we were not expecting.
+
+`400 Bad Request` usually indicates bad input from the client.
+
+`401 Unauthorized` when the client tries to access a page that requires authentication, but the user has not provided credentials. (e.g. the client trying to access the profile editing page, but have not logged in yet.)
+
+`403 Forbidden` when the client tries to access a page that requires authentication and proper rights. The client has authenticated but does not have the privilages for the specific action. (eg. a user trying to see the private pages of another user, or a regular user trying to access admin pages.)
+
 
 ![code/errors/bin/errors.psgi](code/errors/bin/errors.psgi)
 
@@ -70,6 +77,4 @@ Server: Perl Dancer2 0.205002
 Content-Length: 306
 Content-Type: text/html; charset=utf-8
 ```
-
-
 
