@@ -4,6 +4,8 @@ In the previous chapter we created our very first Dancer application that return
 It will be just as simple as the previous application, but instead of returning the full HTML page we will return just the skeleton of the page, then we will send an Ajax request to the
 server for the data and will fill the missing field with the data we get from the server.
 
+## AJAX {#ajax}
+
 A> What is AJAX?
 A> AJAX stands for Asynchronous JavaScript and XML and even though the last letter refers to XML, in most cases today what is sent back-and-forth on the wire
 A> is JSON instead of XML.

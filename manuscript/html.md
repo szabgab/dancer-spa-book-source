@@ -50,6 +50,14 @@ Some of the most important HTML elements and their usage:
 * `p` - paragraph. Usually adds some empty space between the text above and the text below.
 * `table`, `tr`, `th`, `td` are used to create a table. In the golden age of the Internet tables were used to enforce some layout on the page. These days this is not necessary and frowned upon to the point that some people use `div` elements even when they show tabular data. Don't be that person. Use `table` elements when you try to show a table of values.
 
+* `script` - allows use to load an external JavaScript file `<script src="/code.js"></script>` or to embed JavaScript code in our HTML page.
+* `input` - input box
+* `form`  - a form - a set of input boxes.
+* `button` - used to create a nice button.
+
+* `style` - allows us to embed [CSS](#css) in the HTML file.
+* `link` - usually used in the `head`. Instructs the browser to load an external CSS file: `<link href="style.css" rel="stylesheet">`.
+
 ## HTML examples
 
 ### HTML title, h1, h2, h3, h4, h5, h6 tags
@@ -63,5 +71,13 @@ Some of the most important HTML elements and their usage:
 ![code/html/ol_ul_li.html](code/html/ol_ul_li.html)
 
 ![ol, ul, li](images/ol_ul_li.png)
+
+### HTML ol types
+
+The `type` attribute of the `ol` element will tell the browser how to count. Using Arabic numbers is the default, but we can also use lower and uppercase letters and Roman numbers.
+
+![code/html/ol_types.html](code/html/ol_types.html)
+
+![ol types](images/ol_types.png)
 
 

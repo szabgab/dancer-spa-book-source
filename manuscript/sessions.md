@@ -26,15 +26,63 @@ In order to identify that we have the same person sending the request A and requ
 
 The standard authentication is to provide a username and a password. The server could then verify that it has that username/password pair among the authorized users and give access to the visitor. If a user gets up from her computer, someone might sit down in front of it and keep using the application. We would have a hard time noticing that there is a different person on the other end. For example this can easily happen if someone uses a public computer in an Internet Caffe, airport, or a hotel. One solution would be to set a temporaty cookie that gets desctroyed when the browser is closed. This is a relatively good measure. Another option is to set the expirtion time of the cookie to a very short period of time. For example 1 minute. That means if the user gets up from the computer and no one starts to access our site within the one minute then the access rights are revoked. Of course this could be also annoying as this means even if I was just thinking for 1 minute or answering an e-mail, I'll be logged out and will have to enter my credentials again.
 
+## Save value in session
+
+In this example we are going to have a web page with a text entry box and a button to "Set" the value. When the user clicks on the button the text typed in the input box will be sent to the server using an [Ajax](#ajax) call to send a POST request.
+
+
+Project layout:
+
+```
+.
+├── bin
+│   └── app.psgi
+├── lib
+│   ├── MyAPI.pm
+│   └── MySite.pm
+├── public
+│   └── session.js
+├── t
+│   └── session.t
+└── views
+    └── index.tt
+```
+
+The PSGI script is the same as we used earlier. It maps the two Dancer modules to the ourte `/` and the route `/api`:
+
 ![code/sessions/bin/app.psgi](code/sessions/bin/app.psgi)
 
-![code/sessions/lib/MyAPI.pm](code/sessions/lib/MyAPI.pm)
+The MySite module does not do anything interesting. It just returns the content of the main template saved in `views/index.tt`.
 
 ![code/sessions/lib/MySite.pm](code/sessions/lib/MySite.pm)
 
-![code/sessions/t/session.t](code/sessions/t/session.t)
+The template is also quite simple. In the `head` element first we load the jQuery library and then the JavaScript code we have for our page.
+In the `body` in the first pair of `div` elements we an `input` box and a `button` that will display "Set". These will be used to set a value.
+The second pair of `div` elements contain another button named "Get" and an empty `div` element that will be used to display the value saved by the "Set" operation.
+
+![code/sessions/views/index.tt](code/sessions/views/index.tt)
+
+When we open the page we see the following:
+
+![Session - before](images/session_empty.png)
+
+Let's look at the JavaScript code now.
 
 ![code/sessions/public/session.js](code/sessions/public/session.js)
 
-![code/sessions/views/index.tt](code/sessions/views/index.tt)
+`$().ready(` tells jQuery to execute the function passed to it when the HTML document is ready: after it was loaded and rendered by the browser.
+the anonymous function itself has two actions. The first `$("#set").click(` finds the element with `id` "set" (the button with "Set" written on it)
+and attaches a callback to the `click` event. That is, later, if the user clicks on the "Set" button this internal function will run.
+
+{crop-start: 3, crop-end: i9, line-numbers: true}
+![code/sessions/public/session.js](code/sessions/public/session.js)
+
+
+
+
+![code/sessions/lib/MyAPI.pm](code/sessions/lib/MyAPI.pm)
+
+![code/sessions/t/session.t](code/sessions/t/session.t)
+
+
 
