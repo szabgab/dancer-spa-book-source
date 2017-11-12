@@ -18,7 +18,7 @@ subtest root => sub {
     my $res  = $test->request( GET '/' );
     ok( $res->is_success, '[GET /] successful' );
     is $res->header('Content-type'), 'text/html; charset=UTF-8';
-    ok( index( $res->content, 'Errors') >= 0, 'Content looks ok' );
+    ok( index( $res->content, 'Showing errors') >= 0, 'Content looks ok' );
 };
 
 subtest exception => sub {
