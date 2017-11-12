@@ -1,6 +1,7 @@
 # CSS {#css}
 
-HTML used to defined the structure of the page. 
+HTML is used to define the structure of the page. 
+
 CSS - Cascading Style Sheets - is used to make it look good. CSS is used to set sizes, colors, relative location of some items on an HTML page.
 
 In CSS we can create rules that will impact specific elements on the page. In order to address the elements CSS provides a way to address them. It is usually called "CSS Selectors". The same method can be used in other technologies as well. For example most of the JavaScript libraries such as jQuery, will use the same technique to address elements on a page.
@@ -85,8 +86,8 @@ We have already seen this. We need to add an `id` to the HTML elements and then 
 
 ![code/css/b.html](code/css/b.html)
 
-The IDs need to be unique on a single HTML page or the CSS selector will get confused.
-The IDs should also be a lot more meaningful than what we have in this example.
+* The IDs need to be unique on a single HTML page or the CSS selector will get confused.
+* The IDs should also be a lot more meaningful than what we have in this example.
 
 ### Select by class
 
