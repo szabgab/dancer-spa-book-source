@@ -128,7 +128,7 @@ This is what we got:
 
 The `bin/app.psgi` is a PSGI file that stands for Perl Web Server Gateway Interface. It is a standard between Perl scripts and application servers written in Perl.
 `plackup`, the command we used to launched the server is a small PSGI-based web application server good for development purposes.
-You can read more about [Plack and PSGI](http://plackperl.org/). For our purposes it is enough to know that Dancer adders to the PSGI specification and thus we can use and PSGI based web application server to run it. During development we are going to use `plackup`. When we get to [deployment](#deployment) we will discuss out options that match the demand of a web application hit by thousands or millions of requests.
+You can read more about [Plack and PSGI](http://plackperl.org/). For our purposes it is enough to know that Dancer adders to the PSGI specification and thus we can use and PSGI based web application server to run it. During development we are going to use `plackup`. When we get to [deployment](#deployment) we will discuss our options that match the demand of a web application hit by thousands or millions of requests.
 
 The content of the `bin/app.psgi` file is not very interesting for us now.
 

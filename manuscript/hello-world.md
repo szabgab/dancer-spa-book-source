@@ -8,14 +8,9 @@ Create the following file:
 
 ![code/hello_world.psgi](code/hello_world.psgi)
 
-Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux.
-You can use any extension with any content, but some tools use the file extension as a hint to recognize
-the type of the content. For example editors usually map file extensions to languages that means appropriate
-syntax coloring.
+Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux. You can use any extension with any content, but some tools use the file extension as a hint to recognize the type of the content. For example editors usually map file extensions to languages that means appropriate syntax coloring.
 
-This is a Perl program, but it also adheres to the PSGI standard.
-Having psgi extension will help remind everyone that instead of running this with `perl` we need
-to run this with the special `plackup` command that was installed when we installed Dancer.
+This is a Perl program, but it also adheres to the PSGI standard. Having psgi extension will help remind everyone that instead of running this with `perl` we need something else.  For example during development we will run this with the special `plackup` command that was installed when we installed Dancer.
 
 Open the terminal window in the directory where you saved the file and run
 

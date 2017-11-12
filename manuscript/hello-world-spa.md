@@ -1,8 +1,6 @@
 # Hello World - Single Page Application
 
-In the previous chapter we created our very first Dancer application that returned an HTML page. In this chapter we are going to create our very first Single Page Application.
-It will be just as simple as the previous application, but instead of returning the full HTML page we will return just the skeleton of the page, then we will send an Ajax request to the
-server for the data and will fill the missing field with the data we get from the server.
+In the previous chapter we created our very first Dancer application that returned an HTML page. In this chapter we are going to create our very first Single Page Application. It will be just as simple as the previous application, but instead of returning the full HTML page we will return just the skeleton of the page, then we will send an Ajax request to the server for the data and will fill the missing field with the data we get from the server.
 
 ## AJAX {#ajax}
 
@@ -26,11 +24,9 @@ A> that data has returned in response to your request and will call the callback
 
 ![code/hello_world_spa.psgi](code/hello_world_spa.psgi)
 
-In this application you can see two routes. The first one maps the '/' URL to an anonymous function that returns a very simple HTML page with some JavaScript code
-embedded in it. The second route maps the '/api/greeting' URL to another anonymous function that return a JSON string. This is the API we provide for this web site.
+In this application you can see two routes. The first one maps the '/' URL to an anonymous function that returns a very simple HTML page with some JavaScript code embedded in it. The second route maps the '/api/greeting' URL to another anonymous function that return a JSON string. This is the API we provide for this web site.
 
-Probably I should put it in quotes writing "API" as this is a rather slim API having only a single endpoint returning the same string to everyone. Nevertheless it is
-the beginning of a great API.
+Probably I should put it in quotes writing "API" as this is a rather slim API having only a single endpoint returning the same string to everyone. Nevertheless it is the beginning of a great API.
 
 When a normal user visits this site she will access the '/' URL and will receive the HTML and the embedded JavaScript. The HTML is really simple it only contains:
 
@@ -39,11 +35,9 @@ When a normal user visits this site she will access the '/' URL and will receive
 Hello <span id="result"></span> World
 ```
 
-The `<span id="result"></span>` is an empty HTML tag that is displayed "inline". That mean there is not line-break between the "Hello" and the "World". If you use a browser
-in which JavaScript is disabled, or if you load this page while you don't have external Internet access, the only thing you will see in your browser is "Hello World".
+The `<span id="result"></span>` is an empty HTML tag that is displayed "inline". That mean there is not line-break between the "Hello" and the "World". If you use a browser in which JavaScript is disabled, or if you load this page while you don't have external Internet access, the only thing you will see in your browser is "Hello World".
 
-If JavaScript is enabled then the `<script>` tags will be executed. The first script tag loads the jQuery library from the jQuery web site. If we don't have Internet connection
-this will fail.
+If JavaScript is enabled then the `<script>` tags will be executed. The first script tag loads the jQuery library from the jQuery web site. If we don't have Internet connection this will fail.
 
 {line-numbers=off, lang=html}
 ```
@@ -139,14 +133,9 @@ Create the following file:
 
 ![code/hello_world.psgi](code/hello_world.psgi)
 
-Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux.
-You can use any extension with any content, but some tools use the file extension as a hint to recognize
-the type of the content. For example editors usually map file extensions to languages that means appropriate
-syntax coloring.
+Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux. You can use any extension with any content, but some tools use the file extension as a hint to recognize the type of the content. For example editors usually map file extensions to languages that means appropriate syntax coloring.
 
-This is a Perl program, but it also adheres to the PSGI standard.
-Having psgi extension will help remind everyone that instead of running this with `perl` we need
-to run this with the special `plackup` command that was installed when we installed Dancer.
+This is a Perl program, but it also adheres to the PSGI standard. Having psgi extension will help remind everyone that instead of running this with `perl` we need something else to run this. For example during development we use the special `plackup` command that was installed when we installed Dancer.
 
 Open the terminal window in the directory where you saved the file and run
 

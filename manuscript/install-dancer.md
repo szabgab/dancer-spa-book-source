@@ -1,22 +1,18 @@
 ## Install Dancer {#install-dancer}
 
-Dancer, or more specifically Dancer2 is a Perl module distributed via [CPAN, the Comprehensive Perl Archive Network](https://www.cpan.org/).
-There are many ways to install a Perl module depending on your operating system and your preferences.
+Dancer, or more specifically Dancer2 is a Perl module distributed via [CPAN, the Comprehensive Perl Archive Network](https://www.cpan.org/). There are many ways to install a Perl module depending on your operating system and your preferences.
 
 ### Linux - from the distribution
 
-Many Linux distributions such as Ubuntu package Dancer2 and allow you to install it using the standard package management system.
-For example on Ubuntu you could install it using the following command:
+Many Linux distributions such as Ubuntu package Dancer2 and allow you to install it using the standard package management system. For example on Ubuntu you could install it using the following command:
 
 ```
 $ sudo apt-get install libdancer2-perl
 ```
 
-For this you need to have `root`, or more precisely `sudo` rights. This is a very easy way to install Dancer.
-It also has the advantage that using the exact same Linux distribution on multiple servers will bring you the exact same version of Dancer everywhere.
+For this you need to have `root`, or more precisely `sudo` rights. This is a very easy way to install Dancer. It also has the advantage that using the exact same Linux distribution on multiple servers will bring you the exact same version of Dancer everywhere.
 
-The big drawback is that we are using a rather old version of Dancer and some additional Perl modules that we might want to use will not be available with this method.
-For those methods we'll have to use one of the CPAN clients to install the module.
+The big drawback is that we are using a rather old version of Dancer and some additional Perl modules that we might want to use will not be available with this method. For those methods we'll have to use one of the CPAN clients to install the module.
 
 TBD
 
@@ -37,10 +33,9 @@ If you run the same command later you will potentially receive different version
 This command always installs the latest version of any missing module, but it won't upgrade any of the dependencies if
 they already have an installed version that satisfies the requirements.
 
-In most cases these differences won't have an impact on your application, but having different versions carries
-some risk with it. There are several ways to ensure you have a specific version of each one of your the modules you require,
-but implementing those are beyond the scope of this book.
+In most cases these differences won't have an impact on your application, but having different versions carries some risk with it. Setting a minimum required version of Dancer2 and of other modules you use will reduce the risk by a lot. A better solution is to set tthe specific version of each one of the modules you require. There are several ways to do that. For example [Carton](https://metacpan.org/pod/Carton).  Using it is beyond the scope of this book.
 
+In any case, it is usually a good idea to have latest version of Dancer2 and other modules. They tend to be better (faster, smarter, more secure, less memory leaks, etc.). In order to make it safe to upgrade the modules you use, it is a good idea to have a comprehensive test suite for your application.
 
 We'll need a few additional modules. Better install them now:
 

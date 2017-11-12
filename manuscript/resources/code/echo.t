@@ -23,4 +23,4 @@ ok( index( $res->content, '<button id="echo">Echo</button>') > 0, 'Content looks
 
 my $echo  = $test->request( POST '/api/echo' , { txt => 'abc' });
 ok( $echo->is_success, '[POST /api/echo] successful' );
-is $echo->content, '{"result":"cba"}', 'echo abc=cba';
+is( $echo->content, '{"result":"cba"}', 'echo abc=cba' );
