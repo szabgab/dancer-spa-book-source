@@ -22,3 +22,4 @@ You can quite easily configure a server to talk HTTPS, but in order for the brow
 
 The easy and free way to get such a signed certificate is to use [Let's Encrypt](https://letsencrypt.org/).
 
+In a nutshell, if you'd like to allow your users to send in private and personal details such as usernames, passwords, credit details in a secure and encrypted way then you must set up HTTPS.

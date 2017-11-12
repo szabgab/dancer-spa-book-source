@@ -6,9 +6,7 @@ What should happen if there is an exception while running the Perl code on the s
 
 What should happen if a request arrives to a route that is not implemented in the server?
 
-What if the code on the server notices that the input received from the client is not what the server expects? For example the clients sent in a string where the server expected a number.
-Or if the client sends in a username in a registration form that is longer than what we would like to accept?
-Or if the client sends in an e-mail address that is invalid? Can we verify this?
+What if the code on the server notices that the input received from the client is not what the server expects? For example the clients sent in a string where the server expected a number. Or if the client sends in a username in a registration form that is longer than what we would like to accept? Or if the client sends in an e-mail address that is invalid? Can we verify this?
 
 For every request the server will provide some response that will include an [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) from the HTTP specification, some additional headers (e.g. Content-type) and some content. Dancer provides a default behavior for some of the errors mentioned above. If there is an exception in the code it would return a 500 error. If no matching route was found it would return a `404 Not Found`. In both cases the default is to return an HTML page. For both cases the developer can create template files to be used instead of the default pages. This allows the developers to create fancy error pages for the casual visitors. In addition, developers usually create special pages for the unauthorized access case. For example if a client tries to access a private page without login in or if one user tries to access the private pages of another user.
 

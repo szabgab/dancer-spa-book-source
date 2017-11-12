@@ -25,13 +25,9 @@ Once you have Perl and cpanm installed we can start installing the Perl Modules 
 cpanm Dancer2
 ```
 
-it will take a long time and it will install the latest edition of Dancer2 and pull in all the modules required by Dancer2.
-When I ran it, it installed 105 distributions from CPAN.
+it will take a long time and it will install the latest edition of Dancer2 and pull in all the modules required by Dancer2. When I ran it, it installed 105 distributions from CPAN.
 
-Using this command is great if you'd like to get the latest and greatest of all these modules, however this carries some risks.
-If you run the same command later you will potentially receive different versions of Dancer2 and the dependencies.
-This command always installs the latest version of any missing module, but it won't upgrade any of the dependencies if
-they already have an installed version that satisfies the requirements.
+Using this command is great if you'd like to get the latest and greatest of all these modules, however this carries some risks. If you run the same command later you will potentially receive different versions of Dancer2 and the dependencies. This command always installs the latest version of any missing module, but it won't upgrade any of the dependencies if they already have an installed version that satisfies the requirements.
 
 In most cases these differences won't have an impact on your application, but having different versions carries some risk with it. Setting a minimum required version of Dancer2 and of other modules you use will reduce the risk by a lot. A better solution is to set tthe specific version of each one of the modules you require. There are several ways to do that. For example [Carton](https://metacpan.org/pod/Carton).  Using it is beyond the scope of this book.
 

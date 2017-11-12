@@ -74,9 +74,7 @@ Let's look at the JavaScript code now.
 
 We have two routes. Both serving the `/code` path. The first in the file handles the "POST" request to that path, the second one handles the "GET" request.
 
-In the "POST" part first we copy the value received from the client via the "code" field to a temporary variable cleverly named `$code`. We do a little input validation. If `$code` is `defined` this means the user sent in some code. If that's true then we use the `session` function provided by Dancer to save the code under the key "code". By calling the `session` method Dancer checks if there is already a cookie that arrived from the client. If there was one then it reuses this cookie. If there was no earlier cookie then Dancer creates a new cookie. The session data itself, by default, is stored in the memory of the Dancer process itself. This means that if we stop our server the session information will be lost. This is ok for our current demonstration, but you'll probably want to use some more persistent storage. We'll discuss that later. The last statement in this part of the if-statement returns a JSON string created from the `result => 'set'` pair. This is the content that will be sent back to the client.
-If, on the other hand, the `$code` was not `defined` we will want to indicate that there was a client-error. The client application sent in some data that was not according to our expectations.
-So we set the [HTTP status](#http-status-code) to `400 Bad Request` and then return a JSON string with error message.
+In the "POST" part first we copy the value received from the client via the "code" field to a temporary variable cleverly named `$code`. We do a little input validation. If `$code` is `defined` this means the user sent in some code. If that's true then we use the `session` function provided by Dancer to save the code under the key "code". By calling the `session` method Dancer checks if there is already a cookie that arrived from the client. If there was one then it reuses this cookie. If there was no earlier cookie then Dancer creates a new cookie. The session data itself, by default, is stored in the memory of the Dancer process itself. This means that if we stop our server the session information will be lost. This is ok for our current demonstration, but you'll probably want to use some more persistent storage. We'll discuss that later. The last statement in this part of the if-statement returns a JSON string created from the `result => 'set'` pair. This is the content that will be sent back to the client. If, on the other hand, the `$code` was not `defined` we will want to indicate that there was a client-error. The client application sent in some data that was not according to our expectations. So we set the [HTTP status](#http-status-code) to `400 Bad Request` and then return a JSON string with error message.
 
 ### curl
 
@@ -122,6 +120,4 @@ curl --cookie "dancer.session=WgBrIAAAQhRFNGXo89g-LhQYxN5rUmgf" --dump-header he
 ### Test
 
 ![code/sessions/t/session.t](code/sessions/t/session.t)
-
-
 

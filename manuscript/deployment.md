@@ -1,13 +1,13 @@
 # Deployment {#deployment}
 
 
-If you deploy inside your company then you probably already have a machine that you application is expected to run on. You might even have a dedicated systems or DevOps team that is responsible for the deployment of applications.
+If you deploy inside your company then you probably already have a machine that your application is expected to run on. You might even have a dedicated system or a DevOps team that is responsible for the deployment of applications.
 
 This might be also an application you are running on some desktop computer just to provide access to other employees to some of the resources on that machine.
 
-If this is your own project, or if otherwise you have the freedom to choose where to deploy the application, you might want to select onf of the VPS-es.
+If this is your own project, or if otherwise you have the freedom to choose where to deploy the application, you might want to select onf of the VPS providers.
 
-There are several companies that provide Virtual Private Servers (VPS-es) "in the cloud" for a really low amount of money. I personally use [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74) and [Linode](https://www.linode.com/?r=cccf1376edd5c6f0b8eccb97e0741a1f24584e43). In both places you can get a box for $5 / month. (Both of those links are affiliate links so if you use them to sign up to their services and if you stay long enough I get some money I can use to pay my own usage.)
+There are several companies that provide Virtual Private Servers (VPS-es) "in the cloud" for a really low cost. I personally use [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74) and [Linode](https://www.linode.com/?r=cccf1376edd5c6f0b8eccb97e0741a1f24584e43). In both places you can get a box for $5 / month. (Both of those links are affiliate links so if you use them to sign up to their services and if you stay long enough I get some money I can use to pay my own usage.)
 
 In any case with a VPS you get a Linux both with your choice of Linux distribution on it and root access. You can install whatever software you need.
 

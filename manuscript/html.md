@@ -15,8 +15,7 @@ Example:
 
 This is a `div` element with an `id`.
 
-Each element can also have an attribute called `class`. The same class value can, and usually is repeated several times throughout a page.
-Moreover each element can have a class that has several values in it separated by spaces. For example:
+Each element can also have an attribute called `class`. The same class value can, and usually is repeated several times throughout a page. Moreover each element can have a class that has several values in it separated by spaces. For example:
 
 ```
 <div class="ad main"></div>
@@ -25,8 +24,7 @@ Moreover each element can have a class that has several values in it separated b
 <div class="ad main"></div>
 ```
 
-This allows us to address several tags at once and also two address similar tags in a number of ways. e.g. we can address all the elements with class 'ad',
-or all the elements with class 'main'.
+This allows us to address several tags at once and also two address similar tags in a number of ways. e.g. we can address all the elements with class 'ad', or all the elements with class 'main'.
 
 ## HTML elements
 

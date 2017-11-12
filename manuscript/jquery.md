@@ -1,7 +1,6 @@
 # jQuery {#jquery}
 
-[jQuery](http://jquery.com/) is a JavaScript library that makes it easy to write browser-independent code. It makes it easy to access elements on an HTML
-page and manipulate them.
+[jQuery](http://jquery.com/) is a JavaScript library that makes it easy to write browser-independent code. It makes it easy to access elements on an HTML page and manipulate them.
 
 In order to use jQuery we need to load it into our HTML page and we need to add some jQuery code with the specific instructions.
 

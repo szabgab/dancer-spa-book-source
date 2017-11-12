@@ -1,8 +1,6 @@
 ## Editors and IDEs.
 
-In training courses, where we don't have a lot of time to learn a new editor or IDE I usually recommend that people use whatever they are comfortable with.
-This time however you might want to invest some more energy in learning an editor. After all you will spend a lot of time in front of it
-and if it makes you more productive then the investment will pay off.
+In training courses, where we don't have a lot of time to learn a new editor or IDE I usually recommend that people use whatever they are comfortable with. This time however you might want to invest some more energy in learning an editor. After all you will spend a lot of time in front of it and if it makes you more productive then the investment will pay off.
 
 With that said I believe in the end there is no one correct editor or IDE. Some people feel comfortable with one, other with another solution.
 

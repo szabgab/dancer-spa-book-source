@@ -60,10 +60,7 @@ This is perl 5, version 26, subversion 1 (v5.26.1) built for x86_64-linux
 
 
 
-Installing the required modules using [cpanminus](http://cpanmin.us/).
-Don't get to worried if you visit the website of cpan minus. The only thing you'll find there is the
-compressed version of the installation script.
-The recommended way to download and install cpanminus is to run
+Installing the required modules using [cpanminus](http://cpanmin.us/). Don't get to worried if you visit the website of cpan minus. The only thing you'll find there is the compressed version of the installation script. The recommended way to download and install cpanminus is to run
 
 ```
 $ curl -L https://cpanmin.us | perl - App::cpanminus
@@ -76,13 +73,9 @@ $ wget  https://cpanmin.us/
 $ perl index.html App::cpanminus
 ```
 
-The `wget` command will save the main page of the cpanmin.us website as `index.html`. Although it is saved as if it was an HTML file
-in fact it is Perl script we saw on that page. We could rename the file to make it look more like a Perl script, but we don't need to.
-We can run it as it is. The second command executes the content of the index.html file with the current perl and passes 'App::cpanminus'
-as argument.
+The `wget` command will save the main page of the cpanmin.us website as `index.html`. Although it is saved as if it was an HTML file in fact it is Perl script we saw on that page. We could rename the file to make it look more like a Perl script, but we don't need to. We can run it as it is. The second command executes the content of the index.html file with the current perl and passes 'App::cpanminus' as argument.
 
-This will install the latest edition of CPAN Minus, the popular CPAN client.
-You can verify that the installation was successful by typing
+This will install the latest edition of CPAN Minus, the popular CPAN client. You can verify that the installation was successful by typing
 
 ```
 $ which cpanm
@@ -100,11 +93,9 @@ This is probably the most recommended way of installing the latest version of Pe
 
 ### MS Windows - Strawberry Perl
 
-If the computer you are using runs MS Windows you can either use some virtualization technique to run your Perl development environment
-on Linux, or you can run Perl natively.
+If the computer you are using runs MS Windows you can either use some virtualization technique to run your Perl development environment on Linux, or you can run Perl natively.
 
-If you prefer to work on MS Window natively then my recommendation is to install the latest release of [Strawberry Perl](http://strawberryperl.com/).
-It has an msi installer file. Once you installed it, you can open a Command Prompt and use `cpanm` to install the modules you need.
+If you prefer to work on MS Window natively then my recommendation is to install the latest release of [Strawberry Perl](http://strawberryperl.com/). It has an msi installer file. Once you installed it, you can open a Command Prompt and use `cpanm` to install the modules you need.
 
 If you prefer virtualization and using Linux then check out the part about [Vagrant and VirtualBox](#vagrant).
 
@@ -114,8 +105,7 @@ If you prefer virtualization and using Linux then check out the part about [Vagr
 
 ### Mac OSX
 
-OSX is just Unix underneath you can easily compile and install Perl. You can use some virtualization to run a Linux guest system inside OSX.
-For that consult the [Vagrant and VirtualBox](#vagrant) section.
+OSX is just Unix underneath you can easily compile and install Perl. You can use some virtualization to run a Linux guest system inside OSX. For that consult the [Vagrant and VirtualBox](#vagrant) section.
 
 Otherwise you can follow the instructions on how to install Perl on Linux.
 
