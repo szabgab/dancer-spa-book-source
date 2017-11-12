@@ -108,10 +108,25 @@ It has an msi installer file. Once you installed it, you can open a Command Prom
 
 If you prefer virtualization and using Linux then check out the part about [Vagrant and VirtualBox](#vagrant).
 
+### MS Windows - Active Perl
+
+[ActiveState](https://www.activestate.com/) provides a free community edition of its [Active Perl](https://www.activestate.com/activeperl) distribution. You can use that as well on MS Windows.
+
 ### Mac OSX
 
 OSX is just Unix underneath you can easily compile and install Perl. You can use some virtualization to run a Linux guest system inside OSX.
 For that consult the [Vagrant and VirtualBox](#vagrant) section.
 
 Otherwise you can follow the instructions on how to install Perl on Linux.
+
+
+### Mac OSX - Homebrew
+
+[Homebrew](https://brew.sh/) is an open source package management system for Mac OSX. It provides lots of tools that you will need in your development life. Including perl. Once you've installed Homebrew you can type in
+
+```
+brew install perl
+```
+
+and it will download and intall a recent version of Perl.
 

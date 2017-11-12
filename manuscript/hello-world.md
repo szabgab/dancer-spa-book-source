@@ -31,8 +31,7 @@ It will print something like this:
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
 
-Then you can use your browser to visit the URL printed on the screen. It will redirect to http://0.0.0.0:5000/
-and will `Hello World`.
+Then you can use your browser to visit the URL printed on the screen. It will redirect to http://0.0.0.0:5000/ and it will show `Hello World`.
 
 ## Troubleshooting used port {#troubleshooting-used-port}
 

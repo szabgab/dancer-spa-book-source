@@ -1,7 +1,7 @@
 {sample: true}
 # Bug reporting
 
-If you encounter problems with the book, first please verify you are reading the most recent version of the book. Check the fist page of the book you have for "This version was published on DATE" and compare it to the same line of the [Sample chapter](https://leanpub.com/dancer-spa).
+If you encounter problems with the book, first please verify you are reading the most recent version of the book. Check the first page of the book you have for "This version was published on DATE" and compare it to the same line of the [Sample chapter](https://leanpub.com/dancer-spa).
 
 If this is the latest version, then report the problem by sending an e-mail to me: Gabor Szabo <szabgab@gmail.com> with the following information:
 

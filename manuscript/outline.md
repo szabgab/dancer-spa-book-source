@@ -25,7 +25,7 @@ In this chapter we will see how to deploy an application to a Virtual Private Se
 
 ### X
 
-Client side input validation can be used to improve usability. Without hitting the server and without incurring the delay caused by the network traffic we can check if the user has provided all the necessary input, if the input is in the expected format and/or in the expected value range.
+Client side input validation can be used to improve usability. Without reaching the server and without incurring the delay caused by the network traffic we can check if the user has provided all the necessary input, if the input is in the expected format and/or in the expected value range.
 
 ### X
 
@@ -64,7 +64,7 @@ There is a mailing list called dancer-users. You can find link to it on the [abo
 You can use IRC to chat with other Dancer developers. Connect to the #dancer channel on the irc.perl.org IRC server.
 You might use your own IRC client on your computer, or try this web based client: [Mibbit for Dancer](http://perldancer.org/irc).
 
-[Perl Monks](http://www.perlmonks.org/) is the place to go to ask generic Perl related questions.
+[Perl Monks](http://www.perlmonks.org/) is the place to ask general Perl related questions.
 
 Stack Overflow can be a good place to ask questions. Tag them with both [perl and dancer](https://stackoverflow.com/questions/tagged/dancer).
 

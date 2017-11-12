@@ -19,7 +19,7 @@ With that said I believe in the end there is no one correct editor or IDE. Some 
 
 ### MS Windows
 
-* [Notepad++](https://notepad-plus-plus.org/) is an excellent generic editor with syntax highlighting and several usefule plugins.
+* [Notepad++](https://notepad-plus-plus.org/) is an excellent generic editor with syntax highlighting and several useful plugins.
 * [UltraEdit](https://www.ultraedit.com/)
 
 ### Linux

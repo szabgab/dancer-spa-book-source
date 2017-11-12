@@ -121,7 +121,7 @@ $( "#result" ).html( "new content" );
 
 ![code/jquery/pages.html](code/jquery/pages.html)
 
-Use the anchor to mainatin history, allow external links and allow make back button work.
+Use the anchor to maintain history, allow external links and allow make back button work.
 
 ![code/jquery/pages_history.html](code/jquery/pages_history.html)
 
