@@ -16,7 +16,7 @@ subtest main => sub {
 
     my $res  = $test->request( GET '/' );
     ok( $res->is_success, '[GET /] successful' );
-    is $res->header('Content-type'), 'text/html; charset=UTF-8';
+    is( $res->header('Content-type'), 'text/html; charset=UTF-8' );
     is( $res->content, 'Hello World <a href="/api/hello">API</a>', 'Content looks ok' );
 };
 
@@ -24,8 +24,8 @@ subtest api => sub {
     plan tests => 3;
 
     my $res  = $test->request( GET '/api/hello' );
-    is $res->header('Content-type'), 'application/json; charset=UTF-8';
+    is( $res->header('Content-type'), 'application/json; charset=UTF-8' );
     ok( $res->is_success, '[POST /api/hello] successful' );
-    is $res->content, '{"result":"Hello API"}', 'API'
+    is( $res->content, '{"result":"Hello API"}', 'API' );
 };
 

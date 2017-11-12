@@ -24,26 +24,24 @@ ok( index( $res->content, '<button id="calc">Calculate</button>') > 0, 'Content 
 {
     my $calc  = $test->request( POST '/api/calc' , { x => 19, y => 23, op => '+' });
     ok( $calc->is_success, '[POST /api/calc] successful' );
-    is $calc->content, '{"result":42}', 'calc 19+23=42';
+    is( $calc->content, '{"result":42}', 'calc 19+23=42' );
 }
 
 {
     my $calc  = $test->request( POST '/api/calc' , { x => 19, y => 23, op => '-' });
     ok( $calc->is_success, '[POST /api/calc] successful' );
-    is $calc->content, '{"result":-4}', 'calc 19-23=-4';
+    is( $calc->content, '{"result":-4}', 'calc 19-23=-4' );
 }
 
 {
     my $calc  = $test->request( POST '/api/calc' , { x => 2, y => 3, op => '*' });
     ok( $calc->is_success, '[POST /api/calc] successful' );
-    is $calc->content, '{"result":6}', 'calc 2*3=6';
+    is( $calc->content, '{"result":6}', 'calc 2*3=6' );
 }
 
 {
     my $calc  = $test->request( POST '/api/calc' , { x => 12, y => 3, op => '/' });
     ok( $calc->is_success, '[POST /api/calc] successful' );
-    is $calc->content, '{"result":4}', 'calc 12/3=4';
+    is( $calc->content, '{"result":4}', 'calc 12/3=4' );
 }
-
-
 

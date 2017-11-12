@@ -17,7 +17,7 @@ subtest main => sub {
 
     my $res  = $test->request( GET '/' );
     ok( $res->is_success, '[GET /] successful' );
-    is $res->header('Content-type'), 'text/html; charset=UTF-8';
+    is( $res->header('Content-type'), 'text/html; charset=UTF-8' );
     like( $res->content, qr{<script src="/session.js"></script>}, 'Content looks ok' );
 };
 
@@ -25,9 +25,9 @@ subtest api_get_null => sub {
     plan tests => 3;
 
     my $res  = $test->request( GET '/api/code' );
-    is $res->header('Content-type'), 'application/json; charset=UTF-8';
+    is( $res->header('Content-type'), 'application/json; charset=UTF-8' );
     ok( $res->is_success, '[GET /api/code] successful' );
-    is $res->content, '{"result":null}', 'API';
+    is( $res->content, '{"result":null}', 'API' );
 };
 
 my $cookie;
@@ -35,26 +35,26 @@ subtest api_set_code => sub {
     plan tests => 6;
 
     my $res  = $test->request( POST '/api/code', { code => 'abc' } );
-    is $res->header('Content-type'), 'application/json; charset=UTF-8';
+    is( $res->header('Content-type'), 'application/json; charset=UTF-8' );
     ok( $res->is_success, '[SET /api/code] successful' );
-    is $res->content, '{"result":"set"}', 'API';
+    is( $res->content, '{"result":"set"}', 'API' );
 
     # the order of the fields as Dancer2 returns is not fixed.
     my $cookie_header = $res->header('set-cookie');
-    like $cookie_header, qr{dancer.session=([^;]+);};
-    like $cookie_header, qr{Path=/};
-    like $cookie_header, qr{HttpOnly};
+    like( $cookie_header, qr{dancer.session=([^;]+);} );
+    like( $cookie_header, qr{Path=/} );
+    like( $cookie_header, qr{HttpOnly} );
     ($cookie) = $cookie_header =~ m{(dancer.session=\S+);};
-    diag $cookie;
+    diag( $cookie );
 };
 
 subtest api_get_code => sub {
     plan tests => 3;
 
     my $res  = $test->request( GET '/api/code', COOKIE => $cookie );
-    is $res->header('Content-type'), 'application/json; charset=UTF-8';
+    is( $res->header('Content-type'), 'application/json; charset=UTF-8' );
     ok( $res->is_success, '[GET /api/code] successful' );
-    is $res->content, '{"result":"abc"}', 'API';
+    is( $res->content, '{"result":"abc"}', 'API' );
 };
 
 
