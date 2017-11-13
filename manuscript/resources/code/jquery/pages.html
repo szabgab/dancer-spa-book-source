@@ -4,9 +4,9 @@ $().ready(function() {
     var display_page = function(page) {
         $(".page").hide();
         $("#" + page).show();
-    }; 
+    };
     $(".goto").click(function() {
-        console.log($(this).attr("target")); 
+        console.log($(this).attr("target"));
         display_page($(this).attr("target"));
     });
     display_page("page1");

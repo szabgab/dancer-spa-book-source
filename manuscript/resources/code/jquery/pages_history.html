@@ -5,14 +5,14 @@ $().ready(function() {
         $(".page").hide();
         $(hash).show();
         $(location).attr('hash', hash);
-    }; 
+    };
 
     $(".goto").click(function() {
-        console.log($(this).attr("target")); 
+        console.log($(this).attr("target"));
         display_page("#" + $(this).attr("target"));
     });
 
-    $(window).on('hashchange',function(){ 
+    $(window).on('hashchange',function() {
         var hash = $(location).attr('hash');
         console.log(hash);
         display_page(hash);

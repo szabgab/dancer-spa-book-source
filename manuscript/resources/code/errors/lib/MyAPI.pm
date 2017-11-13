@@ -11,7 +11,7 @@ hook after_error => sub {
     $response->{content} = encode_json { result => 'Internal Error'};
     return;
 };
- 
+
 get '/static' => sub {
     return encode_json { result => 'fixed content' };
 };

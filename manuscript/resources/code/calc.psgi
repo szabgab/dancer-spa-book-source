@@ -1,5 +1,5 @@
 use Dancer2;
- 
+
 get '/' => sub {
     return q{
         <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -17,7 +17,7 @@ get '/' => sub {
             })
         });
         </script>
-        
+
         <input id="x">
         <input id="y">
         <button id="calc">Calculate</button>
@@ -31,5 +31,5 @@ post '/api/calc' => sub {
     my $y = body_parameters->{'y'};
     return encode_json { result => $x + $y };
 };
-  
+
 __PACKAGE__->to_app;

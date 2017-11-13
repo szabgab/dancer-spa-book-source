@@ -7,7 +7,7 @@ get '/' => sub {
         <script type="text/javascript">/* <![CDATA[ */
             !window.jQuery && document.write('<script type="text/javascript" src="/jquery-2.1.4.min.js"><\/script>')
         /* ]]> */</script>
-        
+
         <script>
         $().ready(function() {
             $("#text").html("hi "+ Date());
