@@ -68,7 +68,7 @@ Let's look at the JavaScript code now.
 
 ![code/sessions/public/session.js](code/sessions/public/session.js)
 
-`$().ready(` tells jQuery to execute the function passed to it when the HTML document is ready: after it was loaded and rendered by the browser. The anonymous function itself has two actions. The first `$("#set").click()` finds the element with `id` "set" (the button with "Set" written on it) and attaches a callback to the `click` event. That is, later, if the user clicks on the "Set" button this internal function will run.
+`$().ready()` tells jQuery to execute the function passed to it when the HTML document is ready: after it was loaded and rendered by the browser. The anonymous function itself has two actions. The first `$("#set").click()` finds the element with `id` "set" (the button with "Set" written on it) and attaches a callback to the `click` event. That is, later, if the user clicks on the "Set" button this internal function will run.
 
 ![code/sessions/lib/MyAPI.pm](code/sessions/lib/MyAPI.pm)
 
