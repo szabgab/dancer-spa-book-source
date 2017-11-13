@@ -1,5 +1,9 @@
 # Changes
 
+* Improved Outline.
+* Slowly extending the preface.
+* Lots of spelling and grammer fixes recommended by Sawyer X.
+
 ## v0.36 2017-11-06
 
 * Add HTTPS.
