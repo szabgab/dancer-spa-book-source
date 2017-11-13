@@ -83,7 +83,7 @@ What is a session?
 
 When to use an SPA and when to avoid it, an [SEO](#seo) perspective. Search Engine Optimization got a bad reputation due to people trying to exploit the weaknesses of the search engines to rank higher. With the improvement of the algorithms in Google, the work that used to be done in dark alleys is mostly gone. Yet there are several things a web site owner can do that will improve their ranking on Google and thus generate more traffic to the web site.
 
-# X Other
+### X Other
 
 * A simple route returning the HTML page that will house the rest of the application
 * Designing and implementing an API
