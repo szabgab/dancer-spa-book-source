@@ -2,11 +2,9 @@
 
 In the previous chapter we created our very first Dancer application that returned an HTML page. In this chapter we are going to create our very first Single Page Application. It will be just as simple as the previous application, but instead of returning the full HTML page we will return just the skeleton of the page, then we will send an Ajax request to the server for the data and will fill the missing field with the data we get from the server.
 
-## AJAX {#ajax}
-
 
 {aside}
-What is AJAX?
+## What is AJAX?  {#ajax}
 
 AJAX stands for Asynchronous JavaScript and XML and even though the last letter refers to XML, in most cases today what is sent back-and-forth on the wire is JSON instead of XML. Asynchronous means that when the JavaScript code running in the browser sends a request to the server it does not wait for an answer. Instead it keeps running and keeps serving the user. If it was waiting for an answer the browser would seem to be "stuck" till we get an answer. This would be quite unpleasant. So instead, before we send the asynchronous request we also provide a function, we usually call "callback function" that will be executed when the browser received the response.
 
