@@ -1,4 +1,4 @@
-# SEO - Search Engine Optimization
+# SEO - Search Engine Optimization {#seo}
 
 
 Search Engine Optimization, or in short SEO is the act of getting search engines to index the content of your site and display it at the top of the results for terms that are relevant to your subject.

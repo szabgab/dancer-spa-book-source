@@ -1,4 +1,4 @@
-# Echo - SPA
+# Echo - SPA {#spa-echo}
 
 We already know how to send a GET request to the web server to retrieve a fixed thing, but we don't know how to send some data to the server. A very simple application I like to write to see how this works is called echo. It shows a text box and a button. When we press the button it sends the text we typed in to the server which promptly returns it.
 

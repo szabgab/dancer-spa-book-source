@@ -1,3 +1,5 @@
+# Part 1 #
+
 # Setup development environment {#setup-environment}
 
 Before we can get started the development we need to set up our development environment. This might be a bit tedious task that stops us from the "real work", but in my experience investing in the development environment pays off.

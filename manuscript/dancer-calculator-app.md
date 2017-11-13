@@ -1,4 +1,4 @@
-# Calculator
+# Calculator {#spa-calculator}
 
 The Calculator examples is really just a simple extension of the echo example. Here the HTML page has two input boxes and a button. The two boxes are expected to receive two numbers. When the user presses the button the application sends the values from the two input boxes to the server that returns the sum of the two numbers.
 
