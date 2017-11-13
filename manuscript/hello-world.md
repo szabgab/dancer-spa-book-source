@@ -162,7 +162,7 @@ The next line uses the `do` [Perl statement](https://metacpan.org/pod/distributi
 my $app = do "$FindBin::Bin/hello_world.psgi";
 ```
 
-In the next line we use the `is` functions provided by Test::More. It compares if the first two parameters are equal using the `eq` operator and uses the (optional) 3rd parameter as the description of this assertion. The first parameter is the actual result. The second is the expected value. We basically check if the psgi file returned a CODE-reference through
+In the next line we use the `is` functions provided by Test::More. It compares whether the first two parameters are equal using the `eq` operator and uses the (optional) 3rd parameter as the description of this assertion. The first parameter is the actual result. The second is the expected value. We basically check if the psgi file returned a CODE-reference through
 the `do` statement.
 
 {line-numbers=off}
@@ -219,7 +219,7 @@ ok 2 - [GET /] successful
 ok 3 - Content looks ok
 ```
 
-This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each asserting which is good as long as you have a handful of assertions. If you have more then 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
+This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each asserting which is good as long as you have a handful of assertions. If you have more than 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
 
 ```
 prove hello_world.t

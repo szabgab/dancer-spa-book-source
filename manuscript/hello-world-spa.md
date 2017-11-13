@@ -4,21 +4,14 @@ In the previous chapter we created our very first Dancer application that return
 
 ## AJAX {#ajax}
 
-A> What is AJAX?
-A> AJAX stands for Asynchronous JavaScript and XML and even though the last letter refers to XML, in most cases today what is sent back-and-forth on the wire
-A> is JSON instead of XML.
-A> Asynchronous means that when the JavaScript code running in the browser sends a request to the server it does not wait for an answer. Instead it keeps running
-A> and keeps serving the user. If it was waiting for an answer the browser would seem to be "stuck" till we get an answer. This would be quite unpleasant.
-A> So instead, before we send the asynchronous request we also provide a function, we usually call "callback function" that will be executed when the browser
-A> received the response.
-A> Basically the browser has loop running in it that executes pieces of JavaScript code and checks for various events. For example events when the user clicks on
-A> a button or just hovers the mouse over an item, or when some data arrives in response to an earlier Asynchronous call.
-A> For some of these event these events the browser has some built-in function to execute. For example when you hover the mouse over an image, when the browser
-A> notices, it will execute a piece of built-in code that will take the "title" field from the img attribute in the HTML, and show a little popup with that text.
-A> For other events there is no build-in callback.
-A> For most events you can replace the built-in event with your own callback function.
-A> So when we send the AJAX request we also add a callback function and when the browser has time and checks for new events that have arrived it will see the event
-A> that data has returned in response to your request and will call the callback function you provided earlier. It will also pass the data it received to the function.
+
+{aside}
+What is AJAX?
+
+AJAX stands for Asynchronous JavaScript and XML and even though the last letter refers to XML, in most cases today what is sent back-and-forth on the wire is JSON instead of XML. Asynchronous means that when the JavaScript code running in the browser sends a request to the server it does not wait for an answer. Instead it keeps running and keeps serving the user. If it was waiting for an answer the browser would seem to be "stuck" till we get an answer. This would be quite unpleasant. So instead, before we send the asynchronous request we also provide a function, we usually call "callback function" that will be executed when the browser received the response.
+
+Basically the browser has a loop running in it that executes pieces of JavaScript code and checks for various events. For example events when the user clicks on a button or just hovers the mouse over an item, or when some data arrives in response to an earlier Asynchronous call.  For some of these event these events the browser has some built-in function to execute. For example when you hover the mouse over an image, when the browser notices, it will execute a piece of built-in code that will take the "title" field from the img attribute in the HTML, and show a little popup with that text. For other events there is no build-in callback. For most events you can replace the built-in event with your own callback function. So when we send the AJAX request we also add a callback function and when the browser has time and checks for new events that have arrived it will see the event that data has returned in response to your request and will call the callback function you provided earlier. It will also pass the data it received to the function.
+{/aside}
 
 ## The code
 
@@ -287,7 +280,7 @@ The next line uses the `do` [Perl statement](https://metacpan.org/pod/distributi
 my $app = do "$FindBin::Bin/hello_world.psgi";
 ```
 
-In the next line we use the `is` functions provided by Test::More. It compares if the first two parameters are equal using the `eq` operator and uses the (optional) 3rd parameter as the description of this assertion. The first parameter is the actual result. The second is the expected value. We basically check if the psgi file returned a CODE-reference through
+In the next line we use the `is` functions provided by Test::More. It compares whether the first two parameters are equal using the `eq` operator and uses the (optional) 3rd parameter as the description of this assertion. The first parameter is the actual result. The second is the expected value. We basically check if the psgi file returned a CODE-reference through
 the `do` statement.
 
 {line-numbers=off}
@@ -344,7 +337,7 @@ ok 2 - [GET /] successful
 ok 3 - Content looks ok
 ```
 
-This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each asserting which is good as long as you have a handful of assertions. If you have more then 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
+This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each asserting which is good as long as you have a handful of assertions. If you have more than 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
 
 ```
 prove hello_world.t
