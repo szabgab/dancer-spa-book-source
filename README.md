@@ -3,7 +3,7 @@
 ## Test the examples
 
 ```
-prove -r manuscript/resources/code/
+prove -r
 ```
 
 ## Update
