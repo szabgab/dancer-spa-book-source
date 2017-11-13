@@ -1,4 +1,4 @@
-# Hello World
+# Hello W rld
 
 In most programming tutorials printing "Hello World" to the screen is the ultimate first example. Let's pay our duties here as well.
 
@@ -219,7 +219,7 @@ ok 2 - [GET /] successful
 ok 3 - Content looks ok
 ```
 
-This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each asserting which is good as long as you have a handful of assertions. If you have more than 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
+This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each assertion which is good as long as you have a handful of assertions. If you have more than 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
 
 ```
 prove hello_world.t

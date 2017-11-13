@@ -60,7 +60,7 @@ In the first line in the function we print this value to the console of the brow
 
 Then we use the `$.post()` function of jQuery to send a POST-request to the server. The first parameter of this function is the URL where we send the request. In our case it is `/api/echo`.
 
-The second parameter is a JavaScript object. Something that looks very similar to a Perl HASH. (except that instead of fat arrow `=>` we use the colon `:` to separate key and value. The key is `txt`, the value is what was typed in the input element.
+The second parameter is a JavaScript object. Something that looks very similar to a Perl hash. (except that instead of fat arrow `=>` we use the colon `:` to separate key and value. The key is `txt`, the value is what was typed in the input element.
 
 ```
 {

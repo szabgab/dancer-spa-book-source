@@ -337,7 +337,7 @@ ok 2 - [GET /] successful
 ok 3 - Content looks ok
 ```
 
-This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each asserting which is good as long as you have a handful of assertions. If you have more than 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
+This output is called [TAP or Test Anything Protocol](https://perlmaven.com/tap-test-anything-protocol). It is the standard output format of Perl-based tests. It shows one line for each assertion which is good as long as you have a handful of assertions. If you have more than 10 it starts to get boring and if you have more than the number of lines on your screen then you can easily miss the one failing among all the successful ones. Therefore a better way to run them is by using the `prove` command that comes with Perl.
 
 ```
 prove hello_world.t
@@ -402,5 +402,5 @@ is( $ajax->content, '{"result":"Ajax"}', 'Content looks ok' );
 
 In this case we could check that the JSON string matches exactly as it has only one key and one value. In the general case a JSON might represent a hash with multiple keys and values. As the keys of hashes are not ordered the representation of that hash in JSON is not ordered either. Each GET request can return the keys in a different order. If we would like to test the response in those cases we will either have to ensure the order of keys in the response we generate on the server or we need to find a way to disregard those differences.
 
-For example by converting the JSON structure into a Perl hash and comparing that to an expected HASH.
+For example by converting the JSON structure into a Perl hash and comparing that to an expected hash.
 
