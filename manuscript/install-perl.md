@@ -52,7 +52,7 @@ I could also check the version of Perl using
 $ perl -v
 ```
 
-It is 
+It is
 
 ```
 This is perl 5, version 26, subversion 1 (v5.26.1) built for x86_64-linux

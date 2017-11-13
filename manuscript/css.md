@@ -1,6 +1,6 @@
 # CSS {#css}
 
-HTML is used to define the structure of the page. 
+HTML is used to define the structure of the page.
 
 CSS - Cascading Style Sheets - is used to make it look good. CSS is used to set sizes, colors, relative location of some items on an HTML page.
 
@@ -74,7 +74,7 @@ The CSS Selectors are used to address specific elements on the page.
 
 ### Select by tag
 
-We can use the name of the HTML tag to select all the elements with that tag. In this example 
+We can use the name of the HTML tag to select all the elements with that tag. In this example
 
 ![code/css/s1.html](code/css/s1.html)
 

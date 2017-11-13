@@ -218,7 +218,7 @@ __PACKAGE__->to_app;
 (We will discuss other packages later on.) We call the `to_app` method on it that was arranged to be a method of Dancer2. It will initiate the application and will return a code-reference that represents the whole application. When we run `plackup` it loads this file, receives the code-reference as the return value from loading the file and uses that to launch the web server.
 
 
-You can check the automatic use strict/use warnings; `get` being a function; and `__PACKAGE__` being `main` for yourself by using the [B::Deparse](https://metacpan.org/pod/B::Deparse) module on the hello_world.psgi file: Run 
+You can check the automatic use strict/use warnings; `get` being a function; and `__PACKAGE__` being `main` for yourself by using the [B::Deparse](https://metacpan.org/pod/B::Deparse) module on the hello_world.psgi file: Run
 
 ```
 perl -MO=Deparse hello_world.psgi
@@ -369,7 +369,7 @@ The first difference is when we check the content returned by the main page of t
 You don't check exact matching.
 
 So here too we replaced the exact matching with a piece of code that checks if a certain HTML snippet can be found in the response. For this we use the `index` function of Perl that will return the location of the second string in the first string or will return -1 if the second string cannot be found in the first one. We have a boolean operation as the first parameter of the `ok` function and thus the first parameter `ok` will receive will be either True or False. So in our test-case we'll check if the return value of the `index` funciton is greater than 0.
- 
+
 {line-numbers=off}
 ```
 ok( index($res->content, 'Hello <span id="result"></span> World') >= 0, 'Content looks ok' );
