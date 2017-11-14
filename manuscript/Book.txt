@@ -15,14 +15,15 @@ install-dancer.md
 ide.md
 
 hello-world.md
+multi-file-apps.md
 create-dancer-app.md
 
 deployment.md
 https.md
 
 
-hello-world-spa.md
-echo-spa.md
+spa-hello-world.md
+spa-echo.md
 dancer-calculator-app.md
 
 multi-file-apps.md
