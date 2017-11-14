@@ -111,6 +111,7 @@ perl -MO=Deparse hello_world.psgi
 
 and you will get:
 
+{line-numbers=on, lang=perl}
 ![code/deparsed_hello_world.psgi](code/deparsed_hello_world.psgi)
 
 You can also check what to_app returns by including a print statement in the last line:
