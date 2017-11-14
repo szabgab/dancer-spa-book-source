@@ -15,7 +15,9 @@ install-dancer.md
 ide.md
 
 hello-world.md
+hello-world-start.md
 multi-file-apps.md
+using-templates.md
 create-dancer-app.md
 
 deployment.md

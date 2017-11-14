@@ -1,6 +1,7 @@
 # Changes
 
 * Add separate chapter showing multi-page application returning HTML.
+* Move "Hello World" using start and Perl to the main body of the book.
 * Improved Outline.
 * Slowly extending the preface.
 * Lots of spelling and grammer fixes recommended by Sawyer X.

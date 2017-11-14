@@ -1,4 +1,4 @@
-# Multi file Applications {#multi-file-app}
+# Multi file Applications {#multi-file-apps}
 
 We could take the single Perl file approach, we used in our ["Hello World"](#hello-world) example further, but even for that case we had an extra file for our tests. A better approach for any application beyond really small ones is to spread the parts of the application in different files. We are going to do that step-by-step.
 
@@ -42,7 +42,7 @@ The tests are really similar to what had earlier.
 
 ![code/multi/t/multi.t](code/multi/t/multi.t)
 
-We can runt the tests by opening the terminal in the root directory of the project and then typing `prove`.
+We can run the tests by opening the terminal in the root directory of the project and then typing `prove`.
 
 We can launch the application by writing `plackup bin/app.psgi`.
 

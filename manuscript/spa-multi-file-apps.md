@@ -1,4 +1,4 @@
-# Multi file Single Page Applications {#spa-multi-file-app}
+# Multi file Single Page Applications {#spa-multi-file-apps}
 
 
 ```
