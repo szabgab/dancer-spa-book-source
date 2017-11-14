@@ -1,5 +1,7 @@
 # Part 1 #
 
+In this part we'll set up our environment and then we are going to see how to build a web site using Dancer where each page is a full HTML page on its own.
+
 # Setup development environment {#setup-environment}
 
 Before we can get started the development we need to set up our development environment. This might be a bit tedious task that stops us from the "real work", but in my experience investing in the development environment pays off.

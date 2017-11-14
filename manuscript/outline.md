@@ -42,7 +42,7 @@ We will see another SPA which is a bit more complex - a [calculator](#spa-calcul
 
 Client side input validation can be used to improve usability. Without reaching the server and without incurring the delay caused by the network traffic we can check if the user has provided all the necessary input, if the input is in the expected format and/or in the expected value range.
 
-### X
+### X - Server Side input validation
 
 Server side input validation: While checking the input in the client can improve usability and the responsiveness of the web site, it cannot replace server side input validation. After all a person who might want to break in your service can circumvent the client side validation and send data directly to your back-end. You need to protect your service at that point.
 
@@ -87,7 +87,7 @@ When to use an SPA and when to avoid it, an [SEO](#seo) perspective. Search Engi
 
 * A simple route returning the HTML page that will house the rest of the application
 * Designing and implementing an API
-* Testing the back end API
+* Testing the back-end API
 * Pages: client side routing
 * Submitting a form
 
