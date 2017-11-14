@@ -6,6 +6,7 @@ In most programming tutorials printing "Hello World" to the screen is the ultima
 
 Create the following file:
 
+{line-numbers=on, lang=perl}
 ![code/hello_world.psgi](code/hello_world.psgi)
 
 Note, I used the extension `psgi`. File extensions don't have a lot of impact. Especially on Linux. You can use any extension with any content, but some tools use the file extension as a hint to recognize the type of the content. For example editors usually map file extensions to languages that means appropriate syntax coloring.
