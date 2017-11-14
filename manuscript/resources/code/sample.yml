@@ -1,0 +1,12 @@
+---
+key: value
+another_key:
+   - value 1
+   - value 2
+   - value 3
+root:
+   deeper:
+      level_3:
+         - value a
+         - value b
+         - value c
