@@ -50,6 +50,7 @@ If we run `perl dump_yml.pl sample.yml > sample_yml.txt` we get the following ou
 ![code/sample_yml.txt](code/sample_yml.txt)
 
 Similar to JSON, YAML is also supported by a plethora of programming languages, but unlike JSON, it is very easy to read and write. For a list of languages and libraries supporting YAML, visit the [home of YAML](http://www.yaml.org/).
+
 {/aside}
 
 ### The routes in the Perl module
