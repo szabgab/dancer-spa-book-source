@@ -68,9 +68,9 @@ If someone accidently adds a new line of code after the call to `template` then 
 
 The templates themselves are located in the `views` directory:
 
-![code/with-simple-templates/views/index.tt](code/with-simple-templates/view/index.tt)
+![code/with-simple-templates/views/index.tt](code/with-simple-templates/views/index.tt)
 
-![code/with-simple-templates/views/other.tt](code/with-simple-templates/view/other.tt)
+![code/with-simple-templates/views/other.tt](code/with-simple-templates/views/other.tt)
 
 They both include some HTML, a bit more than in our earlier examples, but still not something you'd want to show in public. The point though is that they have placeholders to be filled by the `template` function. `<% title %>` is such placholder that will be filled by the value of the "title" field.
 
