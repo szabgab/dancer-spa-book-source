@@ -32,10 +32,11 @@ In order to use the basic templating system we need to turn it on as a configura
 ![code/with-simple-templates/config.yml](code/with-simple-templates/config.yml)
 
 {aside}
-
 ### YAML - YAML Ain't Markup Language {#yaml}
 
 YAML is a human friendly data serialization standard for all programming languages. It is similar in capabilities to JSON, but it enforces readbility. It is primarily used for hierachical configuration files. It allows us to create key-value pairs and lists of values in any depth. It usually starts with 3 dashes. Here is an example:
+{/aside}
+
 
 ![code/sample.yml](code/sample.yml)
 
@@ -51,7 +52,6 @@ If we run `perl dump_yml.pl sample.yml > sample_yml.txt` we get the following ou
 
 Similar to JSON, YAML is also supported by a plethora of programming languages, but unlike JSON, it is very easy to read and write. For a list of languages and libraries supporting YAML, visit the [home of YAML](http://www.yaml.org/).
 
-{/aside}
 
 ### The routes in the Perl module
 
