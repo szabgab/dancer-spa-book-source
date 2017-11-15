@@ -32,6 +32,7 @@ In order to use the basic templating system we need to turn it on as a configura
 ![code/with-simple-templates/config.yml](code/with-simple-templates/config.yml)
 
 {aside}
+
 ### YAML - YAML Ain't Markup Language {#yaml}
 
 YAML is a human friendly data serialization standard for all programming languages. It is similar in capabilities to JSON, but it enforces readbility. It is primarily used for hierachical configuration files. It allows us to create key-value pairs and lists of values in any depth. It usually starts with 3 dashes. Here is an example:
@@ -69,12 +70,12 @@ The templates themselves are located in the `views` directory:
 
 ![code/with-simple-templates/views/other.tt](code/with-simple-templates/view/other.tt)
 
-They both include some HTML, a bit more than in our earlier examples, but still not something you'd want to show in public. The point though is that they have placeholders to be filled by the `template` fuunction. `<% title %>` is such placholder that will be filled by the value of the "title" field.
+They both include some HTML, a bit more than in our earlier examples, but still not something you'd want to show in public. The point though is that they have placeholders to be filled by the `template` function. `<% title %>` is such placholder that will be filled by the value of the "title" field.
 
 
 ### Testing
 
-Now that the HTML is larger than in our previous example testing if the returned HTML is exactly the same as some expected string. 
+If you have a full-blown HTML file with tons of markup, checking if a route returns exactly the same as we are expecting might not work well. It is usually better to only check for certain values or certain elements appearing on the page. This is what we are doing in our test.
 
 ![code/with-simple-templates/t/multi.t](code/with-simple-templates/t/multi.t)
 
