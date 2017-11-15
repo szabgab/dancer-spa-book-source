@@ -36,11 +36,11 @@ What is YAML?
 {aside}
 ### YAML - YAML Ain't Markup Language {#yaml}
 
-YAML is a human friendly data serialization standard for all programming languages. It is similar in capabilities to JSON, but it enforces readbility. It is primarily used for hierachical configuration files. It allows us to create key-value pairs and lists of values in any depth. It usually starts with 3 dashes. Here is an example:
+YAML is a human friendly data serialization standard for all programming languages. It is similar in capabilities to JSON, but it enforces readability. It is primarily used for hierarchical configuration files. It allows us to create key-value pairs and lists of values in any depth. It usually starts with 3 dashes. Here is an example:
 
 ![code/sample.yml](code/sample.yml)
 
-The indentation in the file represents the hierarchy. When converting to Perl this YAML file will be represented by a hash. In the above example we have a key called 'name' with a value of 'Foo Bar'. It has another key called 'languags' for which the value is a list of items (Perl, JavaScript, and English). In the Perl hash it will become an array. The third key is 'contacts'. It has one value which is another hash. The internal hash has one key 'personal' for which the value is another hash.
+The indentation in the file represents the hierarchy. When converting to Perl this YAML file will be represented by a hash. In the above example we have a key called 'name' with a value of 'Foo Bar'. It has another key called 'languages' for which the value is a list of items (Perl, JavaScript, and English). In the Perl hash it will become an array. The third key is 'contacts'. It has one value which is another hash. The internal hash has one key 'personal' for which the value is another hash.
 
 This Perl script will load the YAML file provided on the command-line and print it out using the `Dumper` function of `Data::Dumper`. This might help understanding how a YAML file is converted to a Perl data structure.
 
@@ -72,7 +72,7 @@ The templates themselves are located in the `views` directory:
 
 ![code/with-simple-templates/views/other.tt](code/with-simple-templates/views/other.tt)
 
-They both include some HTML, a bit more than in our earlier examples, but still not something you'd want to show in public. The point though is that they have placeholders to be filled by the `template` function. `<% title %>` is such placholder that will be filled by the value of the "title" field.
+They both include some HTML, a bit more than in our earlier examples, but still not something you'd want to show in public. The point though is that they have placeholders to be filled by the `template` function. `<% title %>` is such placeholder that will be filled by the value of the "title" field.
 
 
 ### Testing
@@ -83,11 +83,11 @@ If you have a full-blown HTML file with tons of markup, checking if a route retu
 
 ## Multiple page types
 
-If we have multiple pages that are only different in the content we fill using the template varibales we will use the same template for each route. However if we have pages that differn in their general structure we'll have to use separate templates. For example in a blog engine each article has the same HTML structure we can use the same template. The main page however is different. It might list the ttitle of the 10 most recent articles with some teaser to get people to read them. We might have other pages as well. For example a list of the titles of all the articles. An about-page with just plain text. etc. Each page-type will have its own template.
+If we have multiple pages that are only different in the content we fill using the template variables we will use the same template for each route. However if we have pages that differ in their general structure we'll have to use separate templates. For example in a blog engine each article has the same HTML structure we can use the same template. The main page however is different. It might list the title of the 10 most recent articles with some teaser to get people to read them. We might have other pages as well. For example a list of the titles of all the articles. An about-page with just plain text. etc. Each page-type will have its own template.
 
 While each page-type has its own structure, they also have a lot of common things. After all we probably want to make sure all the pages look more-or less the same. We probably want to use the same CSS files for each one of them. We might want to have the same menu regardless of page type. This usually means that we want the top and the bottom part of the HTML, the header and the footer, if you wish, to be the same.
 
-This poses a problem. If each template has a copy of header and the footer part then any change in them must be carried over to the others. You, or whoever updates the templates will forget this and soon you'll have minor differences. There are two commonly used solutions for this. One is that the page-templates only contain the distinct parts and include the header and footer from additoonal template files. The other one is using layouts. A "layout" is just a template that has a placeholder where the content of the page is inserted. In this case the temlate engine picks up the template of the page, processes it. Then picks up the template of the layout and processes that embedding the HTML generated from the page in the placeholder `<% content %>`. Dancer allows both method.
+This poses a problem. If each template has a copy of header and the footer part then any change in them must be carried over to the others. You, or whoever updates the templates will forget this and soon you'll have minor differences. There are two commonly used solutions for this. One is that the page-templates only contain the distinct parts and include the header and footer from additional template files. The other one is using layouts. A "layout" is just a template that has a placeholder where the content of the page is inserted. In this case the template engine picks up the template of the page, processes it. Then picks up the template of the layout and processes that embedding the HTML generated from the page in the placeholder `<% content %>`. Dancer allows both method.
 
 ## Layouts
 
@@ -95,7 +95,7 @@ In order to use layouts we need to tell Dancer what is our default layout. We ca
 
 ![code/layouts/config.yml](code/layouts/config.yml)
 
-The actualy file is located in the "views/layouts" subdirectory and has an extension `.tt`.
+The actual file is located in the "views/layouts" subdirectory and has an extension `.tt`.
 
 The directory layout is similar to what we had earlier, with the additional "layouts" subdirectory:
 
@@ -118,7 +118,7 @@ The directory layout is similar to what we had earlier, with the additional "lay
 
 ### Templates and layout:
 
-![code/layouts/viewss/index.tt](code/layouts/views/index.tt)
+![code/layouts/views/index.tt](code/layouts/views/index.tt)
 
 ![code/layouts/views/other.tt](code/layouts/views/other.tt)
 
