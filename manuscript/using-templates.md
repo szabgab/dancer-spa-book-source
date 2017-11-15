@@ -31,6 +31,8 @@ In order to use the basic templating system we need to turn it on as a configura
 
 ![code/with-simple-templates/config.yml](code/with-simple-templates/config.yml)
 
+text
+
 {aside}
 ### YAML - YAML Ain't Markup Language {#yaml}
 
