@@ -42,7 +42,7 @@ Change the line `vb.memory` to `vb.memory = "2048"`.
 This is the Vagrant file I have:
 
 {line-numbers=off, lang=ruby}
-![code/Vagrantfile](code/Vagrantfile)
+![code/Vagrantfile](code/Vagrantfile.rb)
 
 
 * Then you can type in `vagrant up`.
