@@ -1,6 +1,7 @@
 # Changes
 
 * Add separate chapter showing multi-page application returning HTML.
+* Add chapter showing how to use templates.
 * Move "Hello World" using start and Perl to the main body of the book.
 * Improved Outline.
 * Slowly extending the preface.
