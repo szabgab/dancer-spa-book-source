@@ -16,6 +16,7 @@ This is the directory layout of our application:
     └── multi.t
 ```
 
+## The module
 
 The Perl Module that contains our routes looks very similar to what we had in our psgi file in the previous application. We have two routes, one serving the request to `/`, the root of our web site, the other one serving a route called `/other`. Nothing fancy with that. The big difference that you might notice is that we don't call `to_app` in this file. We don't invoke the application. Instead of that we end the file with `1;`. If you are familiar with Perl modules you know that they all must end with a value that is considered `true` by Perl. People usually put `1;` there, though some, who like personal touch might put a quote from a poem. Anyway, this is just a simple Perl module with a few route declarations. We put the Perl file in the `lib` subdirectory as customary in Perl applications.
 
@@ -33,10 +34,13 @@ This is a potentially very confusing error message because the reader will start
 use lib "$FindBin::Bin/../lib";
 ```
 
+## The PSGI script
+
 In addition, in this code we call the `to_app` method on the MySite module name directly.
 
 ![code/multi/bin/app.psgi](code/multi/bin/app.psgi)
 
+## The test
 
 The tests are really similar to what had earlier.
 
