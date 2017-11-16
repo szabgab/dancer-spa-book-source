@@ -81,6 +81,90 @@ If you have a full-blown HTML file with tons of markup, checking if a route retu
 
 ![code/with-simple-templates/t/multi.t](code/with-simple-templates/t/multi.t)
 
+### Simple Templating System
+
+The built-in [simple templating system of Dancer](https://metacpan.org/pod/Dancer2::Template::Simple) is *really* simple. The only thing it supports is the interpolation of variables we have seen:
+
+```
+<% name %>
+```
+
+There is also a conditional that looks like this:
+
+```
+<% if var %>
+  Show this if var is true
+<% else %>
+  Show this if var is false
+<% end %>
+```
+
+but it is not even documented.
+
+If you would like to do any serious web development you will need the fully supported conditionals, loops, support for deep data structures, include statement etc. Luckily Dancer2 also comes with two additional template systems: [Template Toolkit](https://metacpan.org/pod/Template) which is the know all do all templating system of Perl and [Template::Tiny](https://metacpan.org/pod/Template::Tiny) which is a subset of it. Actually Dancer uses a slightly modified version called [Dancer2::Template::Implementation::ForkedTiny](https://metacpan.org/pod/Dancer2::Template::Implementation::ForkedTiny).
+
+We will take a look at using the Template Toolkit:
+
+## Template Toolkit
+
+The Template Toolkit is a drop-in replacement of the simple template. Or it would be if the default tags were the same, but they are not. By default the simple template system used angle-brackets: `<%  %>` while by default the Template Toolkit uses square brackets `[%  %]`. Don't worry though, we can change that in our configuration file which looks like this now:
+
+![code/with-template-toolkit/config.yml](code/with-template-toolkit/config.yml)
+
+We change the value of the `template` field to `template_toolkit` and added a few more values that will configure the Template Toolkit engine to use `<%` for opening tag and `%>` for closing tag.
+
+If you make these changes to the previous example and run the tests using `prove`, you'll see that all the test are passing.
+
+Now that we have switched to Template Toolkit, let's see what else can it provide beside variable interpolation? Of course we won't have a comprehensive description of TT, for that you might want to check out the [Template Toolkit book](https://www.amazon.com/Perl-Template-Toolkit-Scalable-Templating/dp/0596004761?tag=szabgab-20) or at least the documentation of TT.
+
+## Template Toolkit
+
+
+### Placeholders:
+
+A few examples:
+
+Variable interpolation
+```
+<% name %>
+```
+
+Loop over an array:
+
+```
+<% FOREACH lang IN languages %>
+       <% lang %>
+<% END %>
+```
+
+Conditional: IF-ELSE-END. The ELSE is optional. The END is the closing part and thus it is reqired.
+
+```
+<% IF condition %>
+    ...
+<% ELSE %>
+   ...
+<% END %>
+```
+
+### The template:
+
+In our template you can see the above constructs. For example you can see how do we use the FOREACH loop display list items `li` elements:
+
+![code/with-template-toolkit/views/other.tt](code/with-template-toolkit/views/other.tt)
+
+### The Perl Module
+
+There is not a lot of change in the Perl module, we just pass more key-value pairs to the `template` function, some of which have values that are themselves data structures.
+
+![code/with-template-toolkit/lib/MySite.pm](code/with-template-toolkit/lib/MySite.pm)
+
+### The test
+
+We have some more tests. In order to verify the conditionals we check both side of the if-else-end conditionals. The side that we expect to see we check with `like`. The side that we expect not to see we check with `unlike`. This also checks if the regex matches, but the test-case fails if the regex matches and passes if the regex does not match.
+
+![code/with-template-toolkit/t/multi.t](code/with-template-toolkit/t/multi.t)
+
 ## Multiple page types
 
 If we have multiple pages that are only different in the content we fill using the template variables we will use the same template for each route. However if we have pages that differ in their general structure we'll have to use separate templates. For example in a blog engine each article has the same HTML structure we can use the same template. The main page however is different. It might list the title of the 10 most recent articles with some teaser to get people to read them. We might have other pages as well. For example a list of the titles of all the articles. An about-page with just plain text. etc. Each page-type will have its own template.
@@ -125,6 +209,7 @@ The directory layout is similar to what we had earlier, with the additional "lay
 ![code/layouts/views/layouts/main.tt](code/layouts/views/layouts/main.tt)
 
 
+## Include header and footer
 
-## Template Toolkit
+
 
