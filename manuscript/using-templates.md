@@ -177,7 +177,7 @@ This poses a problem. If each template has a copy of header and the footer part 
 
 In order to use layouts we need to tell Dancer what is our default layout. We can do this in the `config.yml` file by adding the `layout` key with the name of the layout file.
 
-![code/layouts/config.yml](code/layouts/config.yml)
+![code/with-layouts/config.yml](code/with-layouts/config.yml)
 
 The actual file is located in the "views/layouts" subdirectory and has an extension `.tt`.
 
@@ -202,11 +202,11 @@ The directory layout is similar to what we had earlier, with the additional "lay
 
 ### Templates and layout:
 
-![code/layouts/views/index.tt](code/layouts/views/index.tt)
+![code/layouts/views/index.tt](code/with-layouts/views/index.tt)
 
-![code/layouts/views/other.tt](code/layouts/views/other.tt)
+![code/with-layouts/views/other.tt](code/with-layouts/views/other.tt)
 
-![code/layouts/views/layouts/main.tt](code/layouts/views/layouts/main.tt)
+![code/with-layouts/views/layouts/main.tt](code/with-layouts/views/layouts/main.tt)
 
 
 ## Include header and footer
