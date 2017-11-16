@@ -137,7 +137,7 @@ Loop over an array:
 <% END %>
 ```
 
-Conditional: IF-ELSE-END. The ELSE is optional. The END is the closing part and thus it is reqired.
+Conditional: IF-ELSE-END. The ELSE is optional. The END is the closing part and thus it is required.
 
 ```
 <% IF condition %>
@@ -211,5 +211,42 @@ The directory layout is similar to what we had earlier, with the additional "lay
 
 ## Include header and footer
 
+The other approach is to make the pages the main templates and let them include whatever they want. For this we definitely need to use Template Toolkit as the Simple template does not support the INCLUDE statement.
 
+### Templates
+
+Our templates now contain the INCLUDE statements:
+
+![code/with-includes/views/index.tt](code/with-includes/views/index.tt)
+
+![code/with-includes/views/other.tt](code/with-includes/views/other.tt)
+
+
+I usually put the files to be included in a subdirectory of the "views" directory. This time it is called "incl". The header and footer template are here:
+
+
+![code/with-includes/views/incl/header.tt](code/with-includes/views/incl/header.tt)
+
+![code/with-includes/views/incl/footer.tt](code/with-includes/views/incl/footer.tt)
+
+Other than these we don't need to make any changes.
+
+The directory tree looks like this:
+
+```
+.
+├── bin
+│   └── app.psgi
+├── config.yml
+├── lib
+│   └── MySite.pm
+├── t
+│   └── multi.t
+└── views
+    ├── incl
+    │   ├── footer.tt
+    │   └── header.tt
+    ├── index.tt
+    └── other.tt
+```
 
