@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+
+<h1><% title %></h1>
+<% content %>
+
+
+<h2>This is the landing page for code <% code %></h2>
+</body>
+</html>
+

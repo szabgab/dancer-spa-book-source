@@ -1,5 +1,6 @@
 # Changes
 
+* Layouts
 * Add separate chapter showing multi-page application returning HTML.
 * Add chapter showing how to use templates.
 * Add text about static files.

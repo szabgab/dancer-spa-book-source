@@ -7,3 +7,8 @@
 * [New plugin interface](http://advent.perldancer.org/2016/22)
 * [New parameters keywords](http://advent.perldancer.org/2016/9)
 
+
+### Emails
+
+For example when a user registers on the web site and we would want to verify the e-mail address, the standard way is to send an e-mail to the address provided by the user with a code and ask the person to copy that code back to our application.
+

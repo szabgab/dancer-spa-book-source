@@ -250,3 +250,39 @@ The directory tree looks like this:
     └── other.tt
 ```
 
+
+## Templates for e-mails
+
+Besides displaying web pages a web application sometimes need to generate other pages. Most prominently a web application sometimes needs to send e-mails. There are actually tons of e-mail a web application send. These days most sites send HTML e-mails that you want to look nice. For some e-mails you'd want a plain HTML with just a few words and a few links (e.g. "password reset e-mail"). In other cases you would like to have a branded e-mail that looks similar to your web site. Similar, but not the same. For example, in the e-mail you might not want to have the menu you have on the web site.
+
+The best way to generate the HTML that goes in the e-mail is to use the same templating system as you use for the web site. If you use layouts the the default layout is for the web pages but you can override in every call to `template`
+
+
+## Template snippets
+
+TBD
+
+## Multiple layouts
+
+```
+.
+├── bin
+│   └── app.psgi
+├── config.yml
+├── lib
+│   └── MySite.pm
+├── t
+│   └── multi.t
+└── views
+    ├── ad1.tt
+    ├── ad2.tt
+    ├── index.tt
+    ├── layouts
+    │   ├── landing.tt
+    │   └── main.tt
+    └── other.tt
+```
+
+![code/with-multiple-layouts/lib/MySite.pm](code/with-multiple-layouts/lib/MySite.pm)
+
+
