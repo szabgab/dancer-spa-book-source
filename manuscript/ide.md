@@ -14,6 +14,7 @@ With that said I believe in the end there is no one correct editor or IDE. Some 
 * [Komodo IDE](https://www.activestate.com/komodo-ide)
 * [Sublime Text](http://www.sublimetext.com/)
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) with Perl plugin.
+* [Geany](https://www.geany.org/)
 
 ### MS Windows
 

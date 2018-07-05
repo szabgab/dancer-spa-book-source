@@ -29,7 +29,7 @@ it will take a long time and it will install the latest edition of Dancer2 and p
 
 Using this command is great if you'd like to get the latest and greatest of all these modules, however this carries some risks. If you run the same command later you will potentially receive different versions of Dancer2 and the dependencies. This command always installs the latest version of any missing module, but it won't upgrade any of the dependencies if they already have an installed version that satisfies the requirements.
 
-In most cases these differences won't have an impact on your application, but having different versions carries some risk with it. Setting a minimum required version of Dancer2 and of other modules you use will reduce the risk by a lot. A better solution is to set tthe specific version of each one of the modules you require. There are several ways to do that. For example [Carton](https://metacpan.org/pod/Carton).  Using it is beyond the scope of this book.
+In most cases these differences won't have an impact on your application, but having different versions carries some risk with it. Setting a minimum required version of Dancer2 and of other modules you use will reduce the risk by a lot. A better solution is to set the specific version of each one of the modules you require. There are several ways to do that. For example [Carton](https://metacpan.org/pod/Carton).  Using it is beyond the scope of this book.
 
 In any case, it is usually a good idea to have latest version of Dancer2 and other modules. They tend to be better (faster, smarter, more secure, less memory leaks, etc.). In order to make it safe to upgrade the modules you use, it is a good idea to have a comprehensive test suite for your application.
 

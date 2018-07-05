@@ -21,4 +21,4 @@ Daniel Maldonado, Ralph Schuler,
 Jiří Pavlovský,
 and a few more people who wished to stay Anonymous.
 
-af you have supported the campaign, but your name does not appear here it might be that you marked your support as "Private" or that I made a mistake. In either case contact me by e-mail so I can correct the issue.
+If you have supported the campaign, but your name does not appear here it might be that you marked your support as "Private" or that I made a mistake. In either case contact me by e-mail so I can correct the issue.

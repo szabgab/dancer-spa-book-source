@@ -33,3 +33,5 @@ Explain selectors in jQuery.
 TBD.
 How to use jQuery so once the user has visited the site once she will be able to use our application even when she is off-line?
 
+
+The dancer-w.svg file was downloaded from http://www.lodgingcompany.com/images/tech/dancer-w.svg

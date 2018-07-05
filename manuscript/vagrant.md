@@ -1,7 +1,7 @@
 {sample: true}
 ## Development environment using Vagrant {#vagrant}
-{#virtualbox}
 
+{#virtualbox}
 VirtualBox allows you to install a new operating system inside your existing operating system without making any changes to your existing operating system. From the point of view of your current operating system it will be seen just as a directory with a few files in it you can delete any time. This allows you to have a full-blown Linux on top of your Windows machine. Then you can use that Linux machine without creating a mess for others in the family who might be using the same machine.
 
 Vagrant is a command line tool that makes it easy to manage VirtualBox instances.
@@ -13,7 +13,7 @@ Vagrant is a command line tool that makes it easy to manage VirtualBox instances
 * Open the Terminal or Command Prompt and change directory to the one you've just created.
 * Type: `vagrant init ubuntu/zesty64`
 
-This means we base our virtual environment on the Zesty64 release of [Ubunty](https://www.ubuntu.com/). According to the [releases list](https://wiki.ubuntu.com/Releases) Zesty is Ubuntu 17.04 released in April 2017.
+This means we base our virtual environment on the Zesty64 release of [Ubuntu](https://www.ubuntu.com/). According to the [releases list](https://wiki.ubuntu.com/Releases) Zesty is Ubuntu 17.04 released in April 2017.
 
 By the time you are reading this book Ubuntu might have released newer versions of it Operating System. Feel free to use the most recent version. Most likely the rest of the book and all the examples will work there too.
 
@@ -63,7 +63,7 @@ The command to ssh into the guest operating system:
 
 ### MS Windows
 
-On MS Windows you can use [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to connect to the Vagrant based VirtualBox image.
+On MS Windows you can use [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to connect to the Vagrant based VirtualBox image.
 
 You will need to download both putty.exe and puttygen.exe. You can then follow [these instructions](https://www.sitepoint.com/getting-started-vagrant-windows/).
 

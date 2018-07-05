@@ -1,5 +1,7 @@
 # Changes
 
+* Fixed by Chris Davies.
+
 ## v0.44 2018-01-02
 
 * Layouts

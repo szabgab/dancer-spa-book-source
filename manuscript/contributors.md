@@ -8,6 +8,7 @@ Send me comments, suggestions, and fixes!
 
 A\. Sinan Unur,
 Andrew Solomon,
+Chris Davies,
 Dave Cross,
 Jason A. Crome,
 Kaare Rasmussen,

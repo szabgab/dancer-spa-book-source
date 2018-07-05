@@ -13,7 +13,7 @@ This will install gcc, make, and whatever else is needed to build other projects
 
 
 ```
-wget http://www.cpan.org/src/5.0/perl-5.26.1.tar.gz
+wget https://www.cpan.org/src/5.0/perl-5.26.1.tar.gz
 tar -xzf perl-5.26.1.tar.gz
 cd perl-5.26.1
 ./Configure -des -Dprefix=$HOME/perl-5261
@@ -60,7 +60,7 @@ This is perl 5, version 26, subversion 1 (v5.26.1) built for x86_64-linux
 
 
 
-Installing the required modules using [cpanminus](http://cpanmin.us/). Don't get to worried if you visit the website of cpan minus. The only thing you'll find there is the compressed version of the installation script. The recommended way to download and install cpanminus is to run
+Installing the required modules using [cpanminus](https://cpanmin.us/). Don't get too worried if you visit the website of cpan minus. The only thing you'll find there is the compressed version of the installation script. The recommended way to download and install cpanminus is to run
 
 ```
 $ curl -L https://cpanmin.us | perl - App::cpanminus
@@ -73,9 +73,9 @@ $ wget  https://cpanmin.us/
 $ perl index.html App::cpanminus
 ```
 
-The `wget` command will save the main page of the cpanmin.us website as `index.html`. Although it is saved as if it was an HTML file in fact it is Perl script we saw on that page. We could rename the file to make it look more like a Perl script, but we don't need to. We can run it as it is. The second command executes the content of the index.html file with the current perl and passes 'App::cpanminus' as argument.
+The `wget` command will save the main page of the cpanmin.us website as `index.html`. Although it is saved as if it was an HTML file in fact it is the Perl script we saw on that page. We could rename the file to make it look more like a Perl script, but we don't need to. We can run it as it is. The second command executes the content of the index.html file with the current perl and passes 'App::cpanminus' as argument.
 
-This will install the latest edition of CPAN Minus, the popular CPAN client. You can verify that the installation was successful by typing
+This will install the latest edition of CPAN Minus, the popular CPAN client. You can verify that the installation was successful by typing:
 
 ```
 $ which cpanm

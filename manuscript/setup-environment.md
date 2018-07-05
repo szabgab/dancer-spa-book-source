@@ -4,7 +4,7 @@ In this part we'll set up our environment and then we are going to see how to bu
 
 # Setup development environment {#setup-environment}
 
-Before we can get started the development we need to set up our development environment. This might be a bit tedious task that stops us from the "real work", but in my experience investing in the development environment pays off.
+Before we can get started with development we need to set up our development environment. This might be a bit of a tedious task that stops us from getting to the "real work", but in my experience investing in the development environment pays off.
 
 Besides, without installing Dancer you won't be able to do much.
 
