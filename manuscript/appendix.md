@@ -1,5 +1,11 @@
 # Appendix #
 
+## Configuration
+
+![](code/miniapp_config/app.psgi)
+
+![](code/miniapp_config/config.yml)
+
 ## Articles
 
 * http://advent.perldancer.org/2014/9
