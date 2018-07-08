@@ -10,6 +10,7 @@
     "history.md",
 
     "setup-environment.md",
+    "docker.md",
     "vagrant.md",
     "install-perl.md",
     "install-dancer.md",
