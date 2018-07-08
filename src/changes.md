@@ -1,6 +1,8 @@
 # Changes
 
 * Fixed by Chris Davies.
+* Update the [Outline](#outline)
+* Start writing about [Docker](#docker)
 
 ## v0.44 2018-01-02
 
