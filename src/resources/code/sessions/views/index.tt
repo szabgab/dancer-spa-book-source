@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/session.js"></script>
+</head>
+<body>
+
+    <div>
+        <input id="code"><button id="set">Set</button>
+    </div>
+    <div>
+        <button id="get">Get</button>
+        <div id="show"></div>
+    </div>
+
+</body>
+</html>

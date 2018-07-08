@@ -1,0 +1,3 @@
+<div id="big">text with big id</div>
+<div>text without id</div>
+<img src="/images/dcr-header-logo.png">

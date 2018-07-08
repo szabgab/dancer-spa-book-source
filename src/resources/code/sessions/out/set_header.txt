@@ -1,0 +1,8 @@
+HTTP/1.0 200 OK
+Date: Mon, 06 Nov 2017 14:01:04 GMT
+Server: HTTP::Server::PSGI
+Server: Perl Dancer2 0.205002
+Content-Length: 16
+Content-Type: application/json; charset=UTF-8
+Set-Cookie: dancer.session=WgBrIAAAQhRFNGXo89g-LhQYxN5rUmgf; Path=/; HttpOnly
+

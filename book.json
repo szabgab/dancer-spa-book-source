@@ -1,0 +1,51 @@
+[
+    "preface.md",
+    "outline.md",
+    "support.md",
+    "exercises.md",
+    "bug_reporting.md",
+    "changes.md",
+    "supporters.md",
+    "contributors.md",
+    "history.md",
+
+    "setup-environment.md",
+    "vagrant.md",
+    "install-perl.md",
+    "install-dancer.md",
+    "ide.md",
+
+    "hello-world.md",
+    "hello-world-start.md",
+    "multi-file-apps.md",
+    "using-templates.md",
+    "static-files.md",
+    "create-dancer-app.md",
+
+    "deployment.md",
+    "https.md",
+
+
+    "spa-hello-world.md",
+    "spa-echo.md",
+    "dancer-calculator-app.md",
+
+    "multi-file-apps.md",
+    "spa-multi-file-apps.md",
+
+    "server-side-error-handling.md",
+
+    "sessions.md",
+
+    "html.md",
+    "css.md",
+    "bootstrap.md",
+
+    "jquery.md",
+
+    "seo.md",
+
+    "solutions.md",
+    "appendix.md"
+]
+
