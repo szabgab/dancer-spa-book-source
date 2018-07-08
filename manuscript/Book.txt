@@ -3,7 +3,7 @@ outline.md
 support.md
 exercises.md
 bug_reporting.md
-Changes.md
+changes.md
 supporters.md
 contributors.md
 history.md
