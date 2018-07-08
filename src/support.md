@@ -1,5 +1,5 @@
 {sample: true}
-## Support {#support}
+# Support {#support}
 
 If you need support with Dancer you can get it in a number of channels.
 

@@ -1,4 +1,4 @@
-## Outline {#outline}
+# Outline {#outline}
 
 This is the planned outline of the book.
 
