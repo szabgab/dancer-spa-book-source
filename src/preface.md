@@ -1,9 +1,9 @@
 {sample: true}
 # Preface {#preface}
 
-Perl might not get much good press these days, but 30 years after its first release it still has a significant developer community. There are countless organization where Perl is used for mission critical applications.
+Perl might not get much press these days, but 30 years after its first release it still has a significant developer community. There are countless organization where Perl is used for mission critical applications. Every year there is a new release of Perl and CPAN is alive and kicking.
 
-Unlike in 90's, these days there are many languages that can be used to do similar tasks to Perl. Each language with its own strength and weaknesses. One area that grew significantly is the writing of modern web-application. On the Internet two significant new directions are Single Page Applications and Microservices. Interestingly they have a common attribute: They both need to have a well designed API over HTTPs.
+Unlike in 90's, these days there are many languages that can be used to do similar tasks to Perl. Each language with its own strength and weaknesses. One area that grew significantly is the writing of modern web-applications. Two significant new directions are Single Page Applications and Microservices. Interestingly they have a common attribute: They both need to have a well designed API over HTTP.
 
 There are a number of modern frameworks that provide the foundation for that kind of work. Perl Dancer is one of them.
 

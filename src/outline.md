@@ -18,8 +18,7 @@ In this chapter we will have our ["Hello World"](#hello-world) application in Da
 
 ### Accepting parameters from the user
 
-The natural next step is to create an application that can accept parameters from the user. We'll use a very simple application
-to echo back the 3 types of parameters Dancer can handle.
+The natural next step is to create an application that can [accept parameters](#user-input) from the user. We'll use a very simple application to echo back the 3 types of parameters Dancer can handle.
 
 ### Multi-file application
 

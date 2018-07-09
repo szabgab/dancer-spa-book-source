@@ -1,5 +1,6 @@
 [
     "preface.md",
+    "status.md",
     "outline.md",
     "support.md",
     "exercises.md",
@@ -18,6 +19,7 @@
 
     "hello-world.md",
     "hello-world-start.md",
+    "user-input.md",
     "multi-file-apps.md",
     "using-templates.md",
     "static-files.md",
