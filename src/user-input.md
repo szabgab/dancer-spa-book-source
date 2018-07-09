@@ -31,7 +31,7 @@ Let's now see how to do either of these 3 in Dancer.
 
 For our purposes the application will just echo back the values it received from the user.
 
-## GET
+## GET {#user-input-get}
 
 Implementation of the GET method:
 
@@ -71,13 +71,15 @@ In both of these case what we see was the response of the second route, the one 
 
 
 
-## POST
+## POST {#user-input-post}
+{i: body_parameters}
 
 Implementation of the POST method:
 
 ![](code/user-input-post.psgi)
 
-## Route
+## Route {#user-input-route}
+{i: route_parameters}
 
 Implementation of the route method:
 
