@@ -24,9 +24,6 @@ Add exercises. Maybe even create Github repository with exercises.
 
 Accessibility!
 
-Explain GET/POST/etc.
-query_parmeters->
-body_parameter->
 Explain selectors in jQuery.
 
 ## Off-line use of jQuery

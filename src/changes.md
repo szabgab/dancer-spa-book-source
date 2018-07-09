@@ -3,6 +3,7 @@
 * Fixed by Chris Davies.
 * Update the [Outline](#outline)
 * Start writing about [Docker](#docker)
+* Start writing chapter about [user input](#user-input)
 
 ## v0.44 2018-01-02
 
