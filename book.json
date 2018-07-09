@@ -12,7 +12,7 @@
 
     "setup-environment.md",
     "docker.md",
-    "vagrant.md",
+    "../books/manuscript/vagrant.md",
     "install-perl.md",
     "install-dancer.md",
     "ide.md",
