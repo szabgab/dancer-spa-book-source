@@ -1,4 +1,8 @@
 # Deployment {#deployment}
+{i: "Digital Ocean"}
+{i: Linode}
+{i: Starman}
+{i: Twiggy}
 
 
 If you deploy inside your company then you probably already have a machine that your application is expected to run on. You might even have a dedicated system or a DevOps team that is responsible for the deployment of applications.
@@ -17,7 +21,8 @@ You can run Dancer as a CGI application, but I'd only use it that way if I had n
 
 I'd even call the latter "application server" if I did not fear it sounds too heavy.
 
-## Set up VPS
+## Set up VPS {#vps}
+{i: VPS}
 
 I assume you'll be able to register at [Digital Ocean](https://www.digitalocean.com/?refcode=0d4cc75b3a74) or [Linode](https://www.linode.com/?r=cccf1376edd5c6f0b8eccb97e0741a1f24584e43) and create a VPS.
 
@@ -33,6 +38,7 @@ sudo apt-get upgrade
 ```
 
 ![code/nginx-demo.conf](code/nginx-demo.conf)
+{i: Nginx}
 
 ![code/starman_daemon.pl](code/starman_daemon.pl)
 

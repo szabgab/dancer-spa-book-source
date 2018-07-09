@@ -1,4 +1,5 @@
 # jQuery {#jquery}
+{i: JQuery}
 
 [jQuery](http://jquery.com/) is a JavaScript library that makes it easy to write browser-independent code. It makes it easy to access elements on an HTML page and manipulate them.
 

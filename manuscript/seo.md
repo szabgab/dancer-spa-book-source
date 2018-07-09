@@ -1,7 +1,7 @@
 # SEO - Search Engine Optimization {#seo}
+{i: SEO}
 
-
-Search Engine Optimization, or in short SEO is the act of getting search engines to index the content of your site and display it at the top of the results for terms that are relevant to your subject.
+Search Engine Optimization{i: "Search Engine Optimization"}, or in short SEO is the act of getting search engines to index the content of your site and display it at the top of the results for terms that are relevant to your subject.
 
 Search Engines utilize bots (also called crawlers) to go over the pages of a web site, read their content and save them in the database of the Search Engine. Then there are various algorithms inside the Search Engine that index and rank the pages.
 

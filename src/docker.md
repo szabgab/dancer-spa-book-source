@@ -1,5 +1,6 @@
 {sample: true}
 ## Development environment using Docker {#docker}
+{i: docker}
 
 [Docker](https://www.docker.com/) is the de-facto standard for containerization. Instead of installing many applications on the same server, and instead of settiing up separate linux boxes for each applications, Docker allows the use of the same Linux box with a good separation of applications.
 
