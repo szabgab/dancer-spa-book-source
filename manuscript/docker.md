@@ -71,7 +71,75 @@ docker rmi hello-world
 ### Docker images
 
 There a plenty of Docker images in the [Docker Hub](https://hub.docker.com/) we can start using.
-I have created one of my own.
+I have created one of my own. I am going to explain how to build your own Docker image later on.
+For now, let's see how to reuse the one I've already created.
+
+Run the following command:
+
+```
+docker run --rm -it szabgab/ubuntu-perl-dancer2
+```
+
+At first it will complain that the image `szabgab/ubuntu-perl-dancer2` cannot be found locally and then it will donwload it. This will take some time and it will take up some space on your disk, but subsequent runs using the same image will be much faster. At the end of this operation you'll see a prompt like this:
+
+```
+root@1419cda365b8:~#
+```
+
+This happens because we supplied the `-it` flags. This means you are now inside the container on the command line. You can now runn commands like
+
+```
+perl -v
+```
+
+to see which version of Perl is available (5.26.1) or
+
+```
+perl -MDancer2 -E'say $Dancer2::VERSION'
+```
+
+to see which version of Dancer2 is available (0.205002).
+
+Once you are done, you can exit by typing `exit`.
+
+This will get you back to the prompt of your operating system. It will also remove the Docker container you used because we supplied the `--rm` flag. That means if you made any changes (installed more software using `apt-get` or `cpanm`, all those changes will be gone. (If you want to make them persistant, you'll have to create your own Docker image.)
+
+## Running Hello World with Docker
+
+Now we would like to use the Docker image as a stand alone executable and not in interactive mode.
+
+```
+docker run  --rm szabgab/ubuntu-perl-dancer2 perl -E 'say "hello world"'
+```
+This command runs our Docker image. The `--rm` flag tells tocker to remove the container after it has finished running. Then after the name of the image we type the code that goes on the command line. In this case a very simple Perl one-liner.
+
+Feel free to play around with this now.
+
+## Running Hello Dancer with Docker
+
+```
+docker run -v $(pwd):/root -p5001:5000 --rm --name dancer szabgab/ubuntu-perl-dancer2 plackup hello_world.psgi
+```
+
+The `-v $(pwd):/root` code will map the current working directory of the host system to the `/root` directory inside the Docker container. On Ms Windows you'll probably need to provide the current working directory in another way. Probably `-v %cd%:/root`.
+
+The `-p5001:5000` maps port 5001 on the host operating system to port 5000 of the Docker container. You can use any port on your host, the only reason I used 5001 and not 5000 to make it easier to see which one is on the host and which one is on the Docker container.
+
+`--rm` will remove the container after you are done.
+
+`--name dancer` will set the name of the running container to 'dancer' instead of some random string.
+
+Once we execute this command we can access the web application by visiting `http://localhost:5001` in our browser or using `curl`.
+
+In order to stop the Docker  container run the following command in a separate terminal window:
+
+```
+docker stop -t 0 dancer
+```
+
+`-t 0` tells it to kill the container immediately. "dancer" is the name of the container we used when we ran it.
+
+## TBD Building Docker image
 
 ![](code/docker/Dockerfile)
 
