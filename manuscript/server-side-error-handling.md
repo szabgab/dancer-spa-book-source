@@ -1,4 +1,4 @@
-# Server Side Error handling
+# Server Side Error handling {#server-side-error-handling}
 
 What should happen if there is an error in the server?
 

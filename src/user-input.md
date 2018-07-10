@@ -111,4 +111,41 @@ curl 'http://localhost:5000/echo/Foo+Bar/foo%40bar.com'
 
 ![Route request submitted](images/input-form-route.png)
 
+## Submitting a form {#submitting-a-form}
+{i: form}
+{id: get}
+{id: get_all}
+
+![](code/form.psgi)
+
+
+Visit the main page and see this (after filling the form):
+
+![](images/form-filled.png)
+
+Click on the submit button and see this:
+
+![](images/form-response.png)
+
+Alternatively, run the following `curl` command:
+
+```
+curl -X POST -d "oneliner=Hello World&password=Sick Rat&languages=perl&languages=kotlin&gender=neutral&vehicle=car&vehicle=elephant&ema@b.com" http://localhost:5000/echo
+```
+
+And get this response:
+
+```
+
+       <table>
+          <tr><td>Oneliner:</td><td>Hello World</td></tr>
+          <tr><td>Password:</td><td>Sick Rat</td></tr>
+          <tr><td>Languages:</td><td>perl,kotlin</td></tr>
+          <tr><td>Gender:</td><td>neutral</td></tr>
+          <tr><td>Vehicle:</td><td>car,elephant</td></tr>
+          <tr><td>Email:</td><td>a@b.com</td></tr>
+       </table>
+```
+
+The `curl` command shows that we don't actually need all that HTML for in order to pass in some values. It also hhighlights the fact that using `curl` or any other similar technologies, we can submit any data. Regardless of he values in the HTML page.
 

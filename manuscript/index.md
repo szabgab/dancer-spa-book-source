@@ -39,6 +39,8 @@
     * [Development environment using Docker](#docker)
 * `emacs`
     * [Editors and IDEs](#ide)
+* `form`
+    * [Submitting a form](#submitting-a-form)
 * `get`
     * [Explain Hello World](#explain-hello-world)
 * `https`

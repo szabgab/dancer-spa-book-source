@@ -59,11 +59,27 @@ We create the first Single Page Application. It is the venerable ["Hello World"]
 
 We will see another SPA which is a bit more complex - a [calculator](#spa-calculator) that already accepts input from the user and provides some response. This includes a simple AJAX requests to send some data to the server, accept and process the response.
 
-### Submitting a form
+### HTML
+
+I assume most if the readers are somewhat familiar with [HTML](#html) and HTML5. Nevertheless a quick introduction to HTML is included.
+
+### CSS
+
+[CSS](#css) - Cascading Style Sheets are both hated and loved by people. The 4th edition of the [Definite Guide of CSS](https://www.amazon.com/CSS-Definitive-Guide-Visual-Presentation/dp/1449393195?tag=szabgab-20) has 1090 pages and weight 3.7 pounds. We are going to cover the gist of it 2 pages and no pounds.
+
+### Bootstrap
+
+Introduction to [Bootstrap](#bootstrap), the HTML/CSS framework. It is fun to hand-craft your own web site using HTML and CSS, but between you and me, no all of us can make beautiful site. I know I can't. So we can rely on the engineers at Twitter and use Bootstrap. There might be a lot of sites look the same because many people use Bootstrap, but it is much better than having many site look equally horrible because of hand-crafted HTML and CSS..
+
+### jQuery
+
+Selecting the JavaScript framework: the case for [jQuery](#jquery). An introduction to jQuery. There are plenty of modern JavaScript frameworks that generate a lot of noise. Some of them will surely stay around for a long time. jQuery is not that hyped any more, but is probably still the most widely used framework. We will get a small taste of it here. Enough to get started with our Single Page Application.
+
+### Submitting a form in a SPA
 
 In traditional web applications we use `form` elements to submit forms and each such submission will trigger the generation of a new HTML page on the serever. In SPA we need to collect the data from the form and send it to the back-end via an Ajax call while showing a new page to the user.
 
-### Client input validation and error handling
+### Client side input validation and error handling
 
 Client side input validation can be used to improve usability. Without reaching the server and without incurring the delay caused by the network traffic we can check if the user has provided all the necessary input, if the input is in the expected format and/or in the expected value range.
 
@@ -73,37 +89,20 @@ Server side input validation: While checking the input in the client can improve
 
 ### Server Side Errors
 
-Server side error handling. What happens if there is an exception in the code?
+[Server side error handling](#server-side-error-handling). What happens if there is an exception in the code?
 What happens if the user tries to access a route without proper authentication?
 What happens if the user does not supply the expected input, or supplies incorrect input? (e.g. a sting instead of a number).
 What happens if the user tries to access a route that does not exist?
-
-### HTML
-
-I assume most if the readers are somewhat familiar with HTML and HTML5. Nevertheless a quick introduction to HTML is included.
-
-### CSS
-
-CSS - Cascading Style Sheets are both hated and loved by people. The 4th edition of the [Definite Guide of CSS](https://www.amazon.com/CSS-Definitive-Guide-Visual-Presentation/dp/1449393195?tag=szabgab-20) has 1090 pages and weight 3.7 pounds. We are going to cover the gist of it 2 pages and no pounds.
-
-### jQuery
-
-Selecting the JavaScript framework: the case for jQuery. An introduction to jQuery. There are plenty of modern JavaScript frameworks that generate a lot of noise. Some of them will surely stay around for a long time. jQuery is not that hyped any more, but is probably still the most widely used framework. We will get a small taste of it here. Enough to get started with our Single Page Application.
-
-
-### Bootstrap
-
-Introduction to Bootstrap, the HTML/CSS framework. It is fun to hand-craft your own web site using HTML and CSS, but between you and me, no all of us can make beautiful site. I know I can't. So we can rely on the engineers at Twitter and use Bootstrap. There might be a lot of sites look the same because many people use Bootstrap, but it is much better than having many site look equally horrible because of hand-crafted HTML and CSS..
-
-### Authentication and Authorization
-
-How to verify that a visitor is the person she claims to be? Can she access a certain page? Can she execute a certain operation?
 
 ### Session management
 
 What does it mean that a web application is stateless? 
 How can know that two requests come from the same user? How well can we correllate two requests?
-What is a session? How to create and set cookies?
+What is a [session](#sessions)? How to create and set cookies?
+
+### Authentication and Authorization
+
+How to verify that a visitor is the person she claims to be? Can she access a certain page? Can she execute a certain operation?
 
 ### SEO - Search Engine Optimization
 
