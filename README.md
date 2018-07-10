@@ -11,7 +11,6 @@ prove -r
 Update the common articles from the common repository
 
 ```
-./update
 perl ../books/convert.pl
 ```
 
