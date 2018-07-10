@@ -1,4 +1,4 @@
-# Multi file Applications {#multi-file-apps}
+# Multi file Applications {#multi-file-application}
 
 We could take the single Perl file approach, we used in our ["Hello World"](#hello-world) example further, but even for that case we had an extra file for our tests. A better approach for any application beyond really small ones is to spread the parts of the application in different files. We are going to do that step-by-step.
 

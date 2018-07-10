@@ -1,6 +1,6 @@
 # Outline {#outline}
 
-This is the planned outline of the book.
+This is what you are going to read in the book. Feel free to jump to the section most relevant to you.
 
 ## Part 1
 
@@ -18,15 +18,15 @@ In this chapter we will have our ["Hello World"](#hello-world) application in Da
 
 ### Accepting parameters from the user
 
-The natural next step is to create an application that can [accept parameters](#user-input) from the user. We'll use a very simple application to echo back the 3 types of parameters Dancer can handle.
+The natural next step is to create an application that can [accept parameters](#user-input) from the user. We'll use a very simple application to echo back the input provided by the user. We'll see all 3 types of parameters Dancer can handle.
 
 ### Multi-file application
 
-Creating a web site using just one file might sound cool, but it is not very maintainable for anything beyond the mosy simple cases. In this chapter we will see how can we separate out the different parts of the web application. We'll also see how 
+Creating a web site using just one file might sound cool, but it is not very maintainable. For anything beyond the mosy simple cases we'd better separate HTML, CSS, JavaScript, and Perl files. In this chapter we will see how can we separate out the different parts of the web application creating a [multi-file application](#multi-file-application).
 
 ### Using Templates
 
-We go on building applications returning HTML pages. In this chapter we'll see an application with several pages. We will see how to use the `template` function to combine an HTML template with some data. We will also see how to create an application using multiple files. 
+We go on building applications returning HTML pages. In this chapter we'll see an application with several pages. We will see how to use the `template` function to combine an [HTML template](#using-templates) with some data. We will also see how to create an application using multiple files. 
 
 ### Static files
 

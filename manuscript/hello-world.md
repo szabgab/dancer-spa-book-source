@@ -65,7 +65,11 @@ You can kill this job by typing `kill %1` or by moving it to the foreground usin
 
 Lastly what has just happened to me is that I ran a VirtualBox image using Vagrant, but then I tried to run Dancer on my host operating system. VirtualBox has already used port 5000 and thus I got the above error. As I wanted to test the code on the host system, I just set a different port using the `-p` option.
 
-## Explain Hello World
+## Explain Hello World {#explain-hello-world}
+{i: use}
+{i: get}
+{i: to_app}
+{i: __PACKAGE__}
 
 So what is in this Hello World program?
 
@@ -129,7 +133,8 @@ CODE(0x7faac92ac1b8)
 ```
 
 
-## Testing Hello World
+## Testing Hello World {#testing-hello-world}
+{i: testing}
 
 Everyone loves to run ahead and develop a full application, but then when they have to make changes they keep wondering if the change in one corner of the application has any impact on some other area. With small applications such as the "Hello World" we just wrote you can easily check manually if everything works fine. After all it only answers to a single request.
 
