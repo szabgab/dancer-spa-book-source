@@ -110,10 +110,7 @@ When to use an SPA and when to avoid it, an [SEO](#seo) perspective. Search Engi
 
 ### Pages: client side routing
 
-On a traditional web site each page has its own URL and served by a route on the server. In a SPA we usually
-only have one HTML page. All the rest of the communcation with the server happens behind the scene. So how
-can we still have the concept of "pages" in a SPA? How can we ensure that the "Back" button of the browser
-indeed takes us the the previously shown page. If it is still available.
+On a traditional web site each page has its own URL and served by a route on the server. In a SPA we usually only have one HTML page. All the rest of the communcation with the server happens behind the scene. So how can we still have the concept of "pages" in a SPA? How can we ensure that the "Back" button of the browser indeed takes us the the previously shown page. If it is still available.
 
 ### Main Route
 
