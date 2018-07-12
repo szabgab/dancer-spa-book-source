@@ -1,5 +1,9 @@
 # Changes
 
+* Add counter exercises.
+* Add Tic-Tac-Toe exercise.
+
+
 ## v0.52 2018-07-10
 
 * Some fixes by Chris Davies.
