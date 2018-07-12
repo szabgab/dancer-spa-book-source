@@ -1,0 +1,20 @@
+<html>
+<head>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+<table id="board">
+  <% FOR row IN board %>
+    <tr>
+      <% FOR col IN row %>
+         <td class="<% col %>"><% col %></td>
+      <% END %>
+    </tr>
+  <% END %>
+</table>
+
+</body>
+</html>

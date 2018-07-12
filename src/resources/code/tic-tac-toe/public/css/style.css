@@ -1,0 +1,19 @@
+
+#board {
+    background-color: #EEE;
+    border: solid 1px;
+}
+#board td {
+    width: 100px;
+    height: 100px;
+    border: solid 1px;
+}
+
+.x {
+   background-color: yellow;
+}
+
+.o {
+   background-color: green;
+}
+
