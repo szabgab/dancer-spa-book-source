@@ -50,15 +50,15 @@ Project layout:
 
 The PSGI script is the same as we used earlier. It maps the two Dancer modules to the route `/` and the route `/api`:
 
-![code/sessions/bin/app.psgi](code/sessions/bin/app.psgi)
+![code/session-example/bin/app.psgi](code/session-example/bin/app.psgi)
 
 The MySite module does not do anything interesting. It just returns the content of the main template saved in `views/index.tt`.
 
-![code/sessions/lib/MySite.pm](code/sessions/lib/MySite.pm)
+![code/session-example/lib/MySite.pm](code/session-example/lib/MySite.pm)
 
 The template is also quite simple. In the `head` element first we load the jQuery library and then the JavaScript code we have for our page. In the `body` in the first pair of `div` elements we an `input` box and a `button` that will display "Set". These will be used to set a value. The second pair of `div` elements contain another button named "Get" and an empty `div` element that will be used to display the value saved by the "Set" operation.
 
-![code/sessions/views/index.tt](code/sessions/views/index.tt)
+![code/session-example/views/index.tt](code/session-example/views/index.tt)
 
 When we open the page we see the following:
 
@@ -66,11 +66,11 @@ When we open the page we see the following:
 
 Let's look at the JavaScript code now.
 
-![code/sessions/public/session.js](code/sessions/public/session.js)
+![code/session-example/public/session.js](code/session-example/public/session.js)
 
 `$().ready()` tells jQuery to execute the function passed to it when the HTML document is ready: after it was loaded and rendered by the browser. The anonymous function itself has two actions. The first `$("#set").click()` finds the element with `id` "set" (the button with "Set" written on it) and attaches a callback to the `click` event. That is, later, if the user clicks on the "Set" button this internal function will run.
 
-![code/sessions/lib/MyAPI.pm](code/sessions/lib/MyAPI.pm)
+![code/session-example/lib/MyAPI.pm](code/session-example/lib/MyAPI.pm)
 
 We have two routes. Both serving the `/code` path. The first in the file handles the "POST" request to that path, the second one handles the "GET" request.
 
@@ -119,5 +119,5 @@ curl --cookie "dancer.session=WgBrIAAAQhRFNGXo89g-LhQYxN5rUmgf" --dump-header he
 
 ### Test
 
-![code/sessions/t/session.t](code/sessions/t/session.t)
+![code/session-example/t/session.t](code/session-example/t/session.t)
 
