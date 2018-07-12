@@ -37,4 +37,5 @@ jquery.md
 seo.md
 solutions.md
 appendix.md
+exercise-counters.md
 index.md
