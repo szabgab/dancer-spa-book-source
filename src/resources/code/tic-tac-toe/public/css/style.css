@@ -9,6 +9,11 @@
     border: solid 1px;
 }
 
+#board button {
+    width: 100px;
+    height: 100px;
+}
+
 .x {
    background-color: yellow;
 }

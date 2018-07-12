@@ -17,4 +17,10 @@ get '/' => sub {
     }
 };
 
+post '/' => sub {
+    my $sbt = body_parameters->get('sbt');
+    return $sbt if $sbt;
+    return 'non';
+};
+
 1;
