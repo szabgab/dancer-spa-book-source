@@ -5,4 +5,5 @@ Reading a book is nice, but if you'd really like to learn how to build something
 
 * [Hello World](#exercise-hello-world)
 * [Calculator](#exercise-calculator)
-
+* [Counters](#exercise-counters)
+* Tic Tac Toe
