@@ -42,6 +42,6 @@ ok( index( $res->content, '<button id="calc">Calculate</button>') > 0, 'Content 
 {
     my $calc  = $test->request( POST '/api/calc' , { x => 12, y => 3, op => '/' });
     ok( $calc->is_success, '[POST /api/calc] successful' );
-    is( $calc->content, '{"result":4}', 'calc 12/3=4' );
+    is( $calc->content, '{"result":4.0}', 'calc 12/3=4' );
 }
 
