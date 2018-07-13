@@ -253,3 +253,13 @@ Extra points if you also write the tests for it.
 
 Check the [solutions](#solutions)
 
+## Exercise counter {#exercise-counters}
+
+Create a web application that returns the number of times the page was loaded.
+
+The counter is global: regardless who access the pages there is a single counter that starts from 1.
+
+First create a solution in which the counter is restarted ever time we restart the web application. Try to access the page from different browsers and using `curl`.
+
+In the second version make the counter persistent between application restarts. Still we only have a single global counter.
+
