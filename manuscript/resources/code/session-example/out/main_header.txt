@@ -1,7 +1,0 @@
-HTTP/1.0 200 OK
-Date: Mon, 06 Nov 2017 13:56:45 GMT
-Server: HTTP::Server::PSGI
-Server: Perl Dancer2 0.205002
-Content-Length: 318
-Content-Type: text/html; charset=UTF-8
-

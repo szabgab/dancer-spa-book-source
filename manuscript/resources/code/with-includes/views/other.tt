@@ -1,6 +1,0 @@
-<% INCLUDE incl/header.tt %>
-
-<a href="/">Home</a>
-<div id="name"><% name %></div>
-
-<% INCLUDE incl/footer.tt %>

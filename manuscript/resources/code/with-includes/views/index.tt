@@ -1,5 +1,0 @@
-<% INCLUDE incl/header.tt %>
-
-<a href="/other">Other page</a>
-
-<% INCLUDE incl/footer.tt %>
