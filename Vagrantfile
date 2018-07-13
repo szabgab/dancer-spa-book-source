@@ -1,1 +1,1 @@
-manuscript/code/Vagrantfile
+src/resources/code/Vagrantfile.rb
