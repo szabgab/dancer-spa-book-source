@@ -11,7 +11,7 @@ prove -r
 Update the common articles from the common repository
 
 ```
-perl ../books/convert.pl
+perl ../books/convert.pl . ../dancer-spa-book/
 ```
 
 ## TODO
