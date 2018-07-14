@@ -2,7 +2,7 @@
 
 How can a server know that two separate requests come from the same user?
 
-In some environments when a client talks to a server they open a channel and they talk back-and-forth that channel. In that case the server can know that all the requests in a specific channel come from the same client. HTTP, or "the web", that is the HTTP protocol, does not work that way. While there is some level of short-term connection re-use we cannot rely on that.
+In some environments when a client talks to a server they open a channel and they talk back-and-forth on that channel. In that case the server can know that all the requests in a specific channel come from the same client. HTTP, or "the web", that is the HTTP protocol, does not work that way. While there is some level of short-term connection re-use we cannot rely on that.
 
 When using a browser, or curl, or some other program you access a web site it does not know much about you. So how can it know that two requests came from the same person? The server might know your IP address, but several people can use the same IP address and as you move around and connect to different WiFi networks you'll use different IP addresses. So we need another way to allow the server to differentiate between clients. It is actually not that difficult, but there are certain aspects we need to be aware of. When a client connects to a server for the first time the server can generate a unique code and send that code to the client. Then, if the client decides to send that code back with subsequent requests, the server can know that this is the same client that asked the earlier request. Of course if someone can get hold that code then that person can pretend to be the original client. There are several ways to reduce this risk. Primarily by always using encrypted communication. See [HTTPS](#https) for more details on encrypting the connection.
 
@@ -25,6 +25,24 @@ In the terminology of web applications a "session" is a set of requests and resp
 In order to identify that we have the same person sending the request A and request B we need to require some level of authentication.
 
 The standard authentication is to provide a username and a password. The server could then verify that it has that username/password pair among the authorized users and give access to the visitor. If a user gets up from her computer, someone might sit down in front of it and keep using the application. We would have a hard time noticing that there is a different person on the other end. For example this can easily happen if someone uses a public computer in an Internet Cafe, airport, or a hotel. One solution would be to set a temporary cookie that gets destroyed when the browser is closed. This is a relatively good measure. Another option is to set the expiration time of the cookie to a very short period of time. For example 1 minute. That means if the user gets up from the computer and no one starts to access our site within the one minute then the access rights are revoked. Of course this could be also annoying as this means even if I was just thinking for 1 minute or answering an e-mail, I'll be logged out and will have to enter my credentials again.
+
+## Save and access session values
+
+In your code you can call the `session( 'key' => $value );` function this will store the $value under the 'key'. The $value can be any arbirary serializable Perl data structure. In other words in can be scalar or a reference to an array, or a reference to a hash. These data structures can have arbitrary depths. Calling the same function, but only passing the key to it `session('key');` will retreived the stored data.
+
+By default Dancer uses an in-memory storage that uses the memory of the Dancer process. This can be useful for demo purposes and during development, but for any live application you'd want the data to be persistent between the restarts of the Dancer application. For that you need to configure one of the persistent session managers. Probbaly the most simple one of them is the YAML-based storage. This will save the session data in YAML files in the sessions subdirectory of the application. For each cookie there is going to be a separate file. The name of the file is the cookie string. For example: "W0eoNwAA4sVSfc23snbtPX1dNjkfLTEI.yml". You can turn on YAML-based session management in the application code by writing
+
+```
+set session => 'YAML';
+```
+
+or in the `config.yml` file by adding
+
+```
+session: YAML
+```
+
+Dancer will create the sessions directory for you, assuming it has the appropriate permissions.  One minor issue I noticed is that the existence of this directory is only checked at start-up time. So if fr whaever reason you remove the 'sessions' directory while Dancer is running, it won't create it again.
 
 ## Save value in session
 
@@ -155,6 +173,4 @@ The cookie has a name and a value, pass those to the `--cookie` flag:
 ```
 $ curl http://localhost:5000 --cookie "dancer.session=W0eoNwAA4sVSfc23snbtPX1dNjkfLTEI"
 ```
-
-
 
