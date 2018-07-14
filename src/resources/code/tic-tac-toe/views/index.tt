@@ -7,34 +7,7 @@
 
 <h1>Tic Tac Toe</h1>
 
-<form method="POST" action="/">
-<table id="board">
-  <% SET max_row = board.size - 1 %>
-  <% FOR row IN [0 .. max_row] %>
-    <% SET max_col =  board.$row.size - 1 %>
-    <tr>
-      <% FOR col IN [0 .. max_col] %>
-         <% SET slot = board.$row.$col %>
-         <% IF slot == "x" or slot == "o" %>
-           <td class="<% slot %>"></td>
-         <% ELSE %>
-           <td class="empty"><button type="submit" name="sbt" value="<% row %>,<% col %>"></button></td>
-         <% END %>
-      <% END %>
-    </tr>
-  <% END %>
-</table>
-</form>
-
-Next move by
-
-<table id="turn">
-<tr>
-   <td class="<% turn %>"></td>
-</tr>
-</table>
-
-<a href="/start">restart</a>
+<a href="/start">Start the game</a>
 
 </body>
 </html>

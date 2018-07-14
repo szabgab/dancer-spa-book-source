@@ -4,7 +4,11 @@ use Dancer2;
 my $width = 3;
 my $height = 4;
 
-any '/' => sub {
+get '/' => sub {
+    return template 'index';
+};
+
+any '/play' => sub {
     my $board = session('board');
     my $turn = session('turn');
     if (not $board or not $turn) {
@@ -20,7 +24,7 @@ any '/' => sub {
     session('turn' => $turn);
     session('board' => $board);
 
-    return template 'index' => {
+    return template 'board' => {
         board => $board,
         turn  => $turn,
     }
@@ -35,7 +39,7 @@ get '/start' => sub {
     session('turn' => $turn);
     session('board' => $board);
 
-    return template 'index' => {
+    return template 'board' => {
         board => $board,
         turn  => $turn,
     }
