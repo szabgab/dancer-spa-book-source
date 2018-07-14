@@ -8,8 +8,8 @@
 
 ## Articles
 
-* http://advent.perldancer.org/2014/9
-* http://advent.perldancer.org/2014/10
+* [Feature in Dancer2: to_app](http://advent.perldancer.org/2014/9)
+* [Feature in Dancer2: appname](http://advent.perldancer.org/2014/10)
 * [New plugin interface](http://advent.perldancer.org/2016/22)
 * [New parameters keywords](http://advent.perldancer.org/2016/9)
 
