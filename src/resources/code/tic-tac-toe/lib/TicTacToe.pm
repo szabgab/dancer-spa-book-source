@@ -7,16 +7,8 @@ my $height = 4;
 any '/' => sub {
     my $board = session('board');
     my $turn = session('turn');
-    if (not $board) {
-        $board = [
-            ['x', 'o', ''],
-            ['', 'x', 'o'],
-            ['o', '', ''],
-            ['', '', ''],
-        ];
-    }
-    if (not $turn) {
-        $turn = 'x';
+    if (not $board or not $turn) {
+        return q{Not started yet <a href="/start">start</a>};
     }
 
     my $sbt = body_parameters->get('sbt');
@@ -30,10 +22,23 @@ any '/' => sub {
 
     return template 'index' => {
         board => $board,
+        turn  => $turn,
     }
 };
 
 get '/start' => sub {
+    my $board = [];
+    for my $h (0 .. $height-1) {
+        push @$board, [ ('') x $width ];
+    }
+    my $turn = 'x';
+    session('turn' => $turn);
+    session('board' => $board);
+
+    return template 'index' => {
+        board => $board,
+        turn  => $turn,
+    }
 };
 
 1;

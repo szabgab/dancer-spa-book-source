@@ -22,3 +22,15 @@
    background-color: green;
 }
 
+#turn {
+    background-color: #EEE;
+    border: solid 1px;
+}
+
+#turn td {
+    width: 100px;
+    height: 100px;
+    border: solid 1px;
+}
+
+

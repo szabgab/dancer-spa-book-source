@@ -26,5 +26,15 @@
 </table>
 </form>
 
+Next move by
+
+<table id="turn">
+<tr>
+   <td class="<% turn %>"></td>
+</tr>
+</table>
+
+<a href="/start">restart</a>
+
 </body>
 </html>
